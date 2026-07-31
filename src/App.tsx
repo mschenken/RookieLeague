@@ -17,7 +17,7 @@ function ScrollToTop() {
 function Header() {
   return (
     <header className="sticky top-0 z-30 border-b border-hair bg-plane/85 backdrop-blur">
-      <div className="mx-auto flex max-w-5xl items-center justify-between px-4 py-3 sm:px-6">
+      <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-3 sm:px-6">
         <Link to="/" className="group flex items-baseline gap-2 focus:outline-none focus-visible:ring-2 focus-visible:ring-gold">
           <span className="text-sm font-black uppercase tracking-[0.14em] text-gold sm:text-base">The Rookie League</span>
           <span className="hidden text-[0.65rem] uppercase tracking-[0.2em] text-muted sm:inline">Est. 2012</span>
@@ -46,7 +46,9 @@ export default function App() {
       <ScrollToTop />
       <div className="field-lines min-h-screen">
         <Header />
-        <main className="mx-auto max-w-5xl px-4 pb-20 pt-6 sm:px-6 sm:pt-10">
+        {/* Wide enough for the dashboard's data + gallery pair; the inner pages cap
+            themselves narrower so leaderboard rows do not stretch out. */}
+        <main className="mx-auto max-w-6xl px-4 pb-20 pt-6 sm:px-6 sm:pt-10">
           <Routes>
             <Route path="/" element={<Dashboard />} />
             <Route path="/stats/:slug" element={<StatPage />} />

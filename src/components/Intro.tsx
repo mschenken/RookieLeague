@@ -1,4 +1,5 @@
 import { useEffect, useMemo, useState } from 'react'
+import { useIntroAudio } from '../lib/useIntroAudio'
 
 const TEAMS = [
   'ari', 'atl', 'bal', 'buf', 'car', 'chi', 'cin', 'cle', 'dal', 'den', 'det', 'gb',
@@ -25,6 +26,7 @@ type Chip = { abbr: string; tx: string; ty: string; sx: number; sy: number; spin
 
 export default function Intro({ onDone }: { onDone: () => void }) {
   const [leaving, setLeaving] = useState(false)
+  const audio = useIntroAudio()
 
   // Two concentric rings: 32 logos on one circle either overlap on a phone or
   // push the wordmark off-centre.
@@ -50,6 +52,7 @@ export default function Intro({ onDone }: { onDone: () => void }) {
 
   const dismiss = () => {
     if (leaving) return
+    audio.stop()
     setLeaving(true)
     setTimeout(onDone, 420)
   }
@@ -150,6 +153,20 @@ export default function Intro({ onDone }: { onDone: () => void }) {
           Enter the League
         </button>
       </div>
+
+      <audio ref={audio.ref} src={audio.src} loop preload="auto" onError={audio.onError} />
+
+      {/* Hidden entirely when there is no audio file, so a missing theme is invisible
+          rather than a dead button. */}
+      {audio.state !== 'unavailable' && (
+        <button
+          onClick={(e) => { e.stopPropagation(); audio.state === 'playing' ? audio.mute() : audio.enable() }}
+          aria-label={audio.state === 'playing' ? 'Mute theme music' : 'Play theme music'}
+          className="absolute bottom-5 left-5 rounded-full border border-hair px-3.5 py-2 text-xs font-medium text-muted transition hover:border-gold/40 hover:text-gold focus:outline-none focus-visible:ring-2 focus-visible:ring-gold"
+        >
+          {audio.state === 'playing' ? '🔊 Sound on' : '🔇 Sound off'}
+        </button>
+      )}
 
       <button
         onClick={(e) => { e.stopPropagation(); dismiss() }}

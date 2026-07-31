@@ -80,6 +80,36 @@ person, so it is the check that catches a misassigned row.
   even if it would rank.
 - **Win percentage is regular season only.** The source records no playoff game results.
 
+## Photos
+
+The dashboard's gallery cycles through `photos/`. To add pictures:
+
+```bash
+cp ~/wherever/*.jpg photos/
+npm run gallery        # -> public/gallery/*.webp + src/data/gallery.json
+```
+
+`npm run gallery` is deliberately separate from `npm run build` — it needs `sharp`
+(a heavy native dependency) and its output is committed, so CI never has to run it.
+
+It does two things beyond shrinking files:
+
+- **Strips all metadata.** Phone photos carry EXIF blocks up to 12KB that routinely
+  include GPS coordinates and device identifiers. This site is public, so every image
+  is re-encoded without metadata. The current set went from 28MB to 2.7MB.
+- **Caps the long edge at 1400px**, and leans harder on animated frames — an animated
+  GIF at stills quality outweighed all 25 photos put together.
+
+Note the gallery is public: anything recognisable in a photo, including third parties
+in screenshots, is visible to anyone with the link.
+
+## Intro music
+
+The intro looks for `public/audio/draft-theme.{mp3,m4a,ogg,wav}`. None present means a
+silent intro and no audio control. See `public/audio/README.md` — in particular, browsers
+will not autoplay sound before a visitor interacts with the page, so the first visit shows
+a one-tap "Sound off" control rather than starting on its own.
+
 ## Layout
 
 ```

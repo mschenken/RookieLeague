@@ -10,7 +10,7 @@ export default function StatPage() {
   const { Body } = stat
 
   return (
-    <div>
+    <div className="max-w-4xl">
       <Link to="/" className="text-xs text-muted transition hover:text-ink focus:outline-none focus-visible:ring-2 focus-visible:ring-gold">
         ← All stats
       </Link>

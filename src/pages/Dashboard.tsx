@@ -1,14 +1,16 @@
 import { Link } from 'react-router-dom'
+import Gallery from '../components/Gallery'
 import { STATS } from '../stats/definitions'
 import { league, managers, managersUnnamed, unmappedTeams } from '../lib/league'
 
 function Snapshot() {
   const titles = league.podium.filter((p) => p.place === 1).length
-  const teamNames = new Set(managers.flatMap((m) => m.teamNames.map((t) => t.toLowerCase())))
+  // Every game has two teams in it, so summing per-manager games double-counts.
+  const gamesPlayed = managers.reduce((s, m) => s + m.games, 0) / 2
   const items = [
     { label: 'Seasons', value: String(league.years.length) },
     { label: 'Managers', value: String(managers.length) },
-    { label: 'Team names', value: String(teamNames.size) },
+    { label: 'Games played', value: gamesPlayed.toLocaleString() },
     { label: 'Titles awarded', value: String(titles) },
   ]
   return (
@@ -47,7 +49,10 @@ export default function Dashboard() {
         </div>
       )}
 
-      <div className="mt-8 grid gap-3 sm:grid-cols-2 sm:gap-4">
+      {/* Data column and gallery sit side by side once there is room; below lg they
+          stack, with the photos after the stats. */}
+      <div className="mt-8 grid items-start gap-6 lg:grid-cols-[minmax(0,1fr)_20rem] lg:gap-8">
+        <div className="grid gap-3 sm:grid-cols-2 sm:gap-4">
         {STATS.map((s, i) => (
           <Link
             key={s.slug}
@@ -78,6 +83,11 @@ export default function Dashboard() {
             </div>
           </Link>
         ))}
+        </div>
+
+        <aside className="rise lg:sticky lg:top-20" style={{ animationDelay: '200ms' }}>
+          <Gallery />
+        </aside>
       </div>
     </div>
   )

@@ -168,30 +168,45 @@ function PlayoffAppearances() {
 
 /* ------------------------------------ 5. championships vs finals appearances */
 
+const PODIUM = [
+  { key: 'first', label: '1st — champion', color: 'var(--color-s4)' },
+  { key: 'second', label: '2nd — lost the final', color: 'var(--color-s1)' },
+  { key: 'third', label: '3rd', color: 'var(--color-s3)' },
+] as const
+
 function Championships() {
   const pool = managers
-    .filter((m) => m.finalsAppearances > 0 || m.podiums > 0)
+    .filter((m) => m.podiums > 0)
     .slice()
-    .sort((a, b) => b.championships - a.championships || b.finalsAppearances - a.finalsAppearances || b.podiums - a.podiums)
-  const scale = maxOf(pool.map((m) => m.finalsAppearances)) || 1
+    .sort(
+      (a, b) =>
+        b.championships - a.championships ||
+        b.runnerUps - a.runnerUps ||
+        b.thirdPlace - a.thirdPlace ||
+        a.avgFinish - b.avgFinish,
+    )
+  const scale = maxOf(pool.map((m) => m.podiums)) || 1
 
   return (
     <>
-      {/* Two series, so a legend is always present; segments are also direct-labelled. */}
-      <div className="mb-4 flex flex-wrap items-center gap-4 text-xs text-ink-2">
-        <span className="flex items-center gap-2">
-          <span className="h-2.5 w-4 rounded-[2px]" style={{ background: 'var(--color-s4)' }} /> Championships
-        </span>
-        <span className="flex items-center gap-2">
-          <span className="h-2.5 w-4 rounded-[2px]" style={{ background: 'var(--color-s1)' }} /> Lost in the final
-        </span>
+      {/* Three series, so a legend is always present. Green and gold sit close under
+          tritanopia, so every segment also carries its own count — colour never
+          works alone here. */}
+      <div className="mb-4 flex flex-wrap items-center gap-x-4 gap-y-2 text-xs text-ink-2">
+        {PODIUM.map((p) => (
+          <span key={p.key} className="flex items-center gap-2">
+            <span className="h-2.5 w-4 rounded-[2px]" style={{ background: p.color }} />
+            {p.label}
+          </span>
+        ))}
       </div>
 
       <ol className="divide-y divide-hair overflow-hidden rounded-xl border border-hair bg-surface">
         {pool.map((m, i) => {
-          const losses = m.finalsAppearances - m.championships
+          const delay = `${Math.min(i * 30, 480)}ms`
+          const counts = [m.championships, m.runnerUps, m.thirdPlace]
           return (
-            <li key={m.id} className="rise px-3 py-3 sm:px-4" style={{ animationDelay: `${Math.min(i * 30, 480)}ms` }}>
+            <li key={m.id} className="rise px-3 py-3 sm:px-4" style={{ animationDelay: delay }}>
               <div className="flex items-center gap-3 sm:gap-4">
                 <span className="tnum w-6 shrink-0 text-right text-xs font-semibold text-muted sm:w-7 sm:text-sm">{i + 1}</span>
                 <div className="min-w-0 flex-1">
@@ -200,27 +215,28 @@ function Championships() {
                   </Link>
                   <div className="truncate text-xs text-muted">
                     {m.titleYears.length ? `Won ${m.titleYears.join(', ')}` : 'No titles'}
-                    {m.thirdPlace > 0 && ` · ${m.thirdPlace} third-place`}
                   </div>
                 </div>
-                <span className="tnum shrink-0 text-right text-sm font-bold text-ink sm:text-base">
-                  {m.championships}
-                  <span className="text-muted">/{m.finalsAppearances}</span>
-                </span>
+                {/* Per-place counts in ink tokens, with a colour chip carrying identity. */}
+                <div className="flex shrink-0 items-center gap-2 sm:gap-3">
+                  {PODIUM.map((p, n) => (
+                    <span key={p.key} className="flex items-center gap-1" title={p.label}>
+                      <span className="h-2 w-2 rounded-full" style={{ background: p.color, opacity: counts[n] ? 1 : 0.25 }} />
+                      <span className={`tnum text-sm font-bold sm:text-base ${counts[n] ? 'text-ink' : 'text-muted'}`}>{counts[n]}</span>
+                    </span>
+                  ))}
+                </div>
               </div>
-              {/* 2px surface gap between the two fills keeps them readable without colour. */}
+              {/* 2px surface gaps keep adjacent fills readable without relying on hue. */}
               <div className="mt-2 flex h-2 gap-[2px] pl-9 sm:pl-11">
-                {m.championships > 0 && (
-                  <div
-                    className="bar-grow rounded-[3px]"
-                    style={{ width: `${(m.championships / scale) * 100}%`, background: 'var(--color-s4)', animationDelay: `${Math.min(i * 30, 480)}ms` }}
-                  />
-                )}
-                {losses > 0 && (
-                  <div
-                    className="bar-grow rounded-[3px]"
-                    style={{ width: `${(losses / scale) * 100}%`, background: 'var(--color-s1)', animationDelay: `${Math.min(i * 30, 480)}ms` }}
-                  />
+                {PODIUM.map((p, n) =>
+                  counts[n] > 0 ? (
+                    <div
+                      key={p.key}
+                      className="bar-grow rounded-[3px]"
+                      style={{ width: `${(counts[n] / scale) * 100}%`, background: p.color, animationDelay: delay }}
+                    />
+                  ) : null,
                 )}
               </div>
             </li>
@@ -340,11 +356,11 @@ export const STATS: StatDef[] = [
   {
     slug: 'championships',
     title: 'Championships',
-    blurb: 'Titles won, against titles played for.',
+    blurb: 'Every podium finish — firsts, seconds and thirds.',
     accent: 'var(--color-s4)',
     glyph: '🏆',
     method:
-      'Championships counts first-place finishes. Finals appearances counts first plus second — every year a manager played for the title. The gap between the two bars is how often they got there and lost.',
+      'Counts of first-, second- and third-place finishes, shown side by side so a manager who kept reaching the final without winning reads differently from one who converted. Ranked by championships, then runner-ups, then thirds. Only managers with at least one podium finish appear.',
     preview: { value: String(mostTitles.championships), leader: mostTitles.name },
     Body: Championships,
   },
