@@ -1,0 +1,191 @@
+@import 'tailwindcss';
+
+/*
+  The Rookie League — dark-only by deliberate choice. This is a stadium-at-night
+  aesthetic; a light mode would fight the intro animation and the trophy metalwork,
+  so the design commits to one look rather than shipping a weak second theme.
+
+  Data-mark colors are the validated categorical slots (dark steps), verified with
+  the dataviz validator against the #16161a chart surface: all four pass the
+  lightness band, chroma floor, CVD separation, normal-vision floor, and 3:1 contrast.
+  Gold is decorative chrome only (trophies, rules, glow) and never encodes data.
+*/
+@theme {
+  --color-plane: #0b0b0d;
+  --color-surface: #16161a;
+  --color-raised: #1e1e24;
+
+  --color-ink: #ffffff;
+  --color-ink-2: #c3c2b7;
+  --color-muted: #898781;
+
+  --color-grid: #2c2c2a;
+  --color-baseline: #383835;
+  --color-hair: rgba(255, 255, 255, 0.1);
+
+  --color-s1: #3987e5;
+  --color-s2: #d95926;
+  --color-s3: #199e70;
+  --color-s4: #c98500;
+
+  --color-gold: #d4a437;
+  --color-gold-dim: #8a6a1f;
+  --color-silver: #b8b8c0;
+  --color-bronze: #a9722e;
+
+  --font-sans: ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif;
+}
+
+html {
+  color-scheme: dark;
+  background: var(--color-plane);
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--color-plane);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Faint yard-line texture behind the whole page. */
+.field-lines {
+  background-image: repeating-linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.028) 0 1px,
+    transparent 1px 96px
+  );
+}
+
+.tnum {
+  font-variant-numeric: tabular-nums;
+}
+
+/* --------------------------------------------------------------- intro */
+
+@keyframes logo-fly {
+  0% {
+    opacity: 0;
+    transform: translate(var(--sx), var(--sy)) scale(0.2) rotate(var(--spin));
+  }
+  55% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+    transform: translate(var(--tx), var(--ty)) scale(1) rotate(0deg);
+  }
+}
+
+.logo-chip {
+  animation: logo-fly 1400ms cubic-bezier(0.16, 0.9, 0.28, 1) both;
+  animation-delay: var(--delay);
+}
+
+/* Logos drift rather than orbit. The rings are ellipses (wide, to clear the
+   wordmark), and rotating an ellipse would swing its long axis vertical and sweep
+   logos straight through the title. A per-logo bob gives life without that. */
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-7px);
+  }
+}
+.logo-float {
+  animation: float 5200ms ease-in-out infinite both;
+}
+
+@keyframes title-in {
+  0% {
+    opacity: 0;
+    letter-spacing: 0.45em;
+    filter: blur(14px);
+    transform: scale(0.94);
+  }
+  100% {
+    opacity: 1;
+    letter-spacing: 0.06em;
+    filter: blur(0);
+    transform: scale(1);
+  }
+}
+.title-in {
+  animation: title-in 1200ms cubic-bezier(0.2, 0.8, 0.2, 1) both;
+}
+
+@keyframes sweep {
+  0% {
+    background-position: -140% 0;
+  }
+  100% {
+    background-position: 240% 0;
+  }
+}
+.gold-text {
+  background: linear-gradient(
+    100deg,
+    #7a5c18 0%,
+    #d4a437 26%,
+    #fff3c4 42%,
+    #d4a437 58%,
+    #7a5c18 100%
+  );
+  background-size: 220% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: sweep 5s ease-in-out 1 both;
+  animation-delay: 900ms;
+}
+
+@keyframes rise {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+.rise {
+  animation: rise 520ms cubic-bezier(0.2, 0.8, 0.2, 1) both;
+}
+
+@keyframes bar-grow {
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
+  }
+}
+.bar-grow {
+  transform-origin: left center;
+  animation: bar-grow 620ms cubic-bezier(0.2, 0.8, 0.2, 1) both;
+}
+
+/* Anyone who asked for less motion gets the resolved state, not a shorter show. */
+@media (prefers-reduced-motion: reduce) {
+  .logo-chip,
+  .logo-float,
+  .title-in,
+  .gold-text,
+  .rise,
+  .bar-grow {
+    animation: none !important;
+  }
+  .logo-chip {
+    opacity: 1;
+    transform: translate(var(--tx), var(--ty)) scale(1);
+  }
+  .gold-text {
+    color: var(--color-gold);
+    -webkit-text-fill-color: var(--color-gold);
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "_comment": "Per-season league shape. playoffSpots confirmed by the commissioner. teamCount is derived from the standings CSV and asserted at build time.",
+  "seasons": [
+    { "year": 2012, "teamCount": 6,  "playoffSpots": 4, "divisions": 1 },
+    { "year": 2013, "teamCount": 10, "playoffSpots": 6, "divisions": 2 },
+    { "year": 2014, "teamCount": 12, "playoffSpots": 8, "divisions": 1 },
+    { "year": 2015, "teamCount": 14, "playoffSpots": 8, "divisions": 1 },
+    { "year": 2016, "teamCount": 12, "playoffSpots": 8, "divisions": 1 },
+    { "year": 2017, "teamCount": 12, "playoffSpots": 8, "divisions": 1 },
+    { "year": 2018, "teamCount": 10, "playoffSpots": 6, "divisions": 1 },
+    { "year": 2019, "teamCount": 10, "playoffSpots": 6, "divisions": 1 },
+    { "year": 2020, "teamCount": 10, "playoffSpots": 6, "divisions": 1 },
+    { "year": 2021, "teamCount": 10, "playoffSpots": 6, "divisions": 1 },
+    { "year": 2022, "teamCount": 10, "playoffSpots": 6, "divisions": 1 },
+    { "year": 2023, "teamCount": 10, "playoffSpots": 6, "divisions": 1 },
+    { "year": 2024, "teamCount": 10, "playoffSpots": 6, "divisions": 1 },
+    { "year": 2025, "teamCount": 10, "playoffSpots": 6, "divisions": 1 }
+  ]
+}

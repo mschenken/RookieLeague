@@ -1,0 +1,51 @@
+# Who was who. Fill in the "manager" column with the real person's name — that is the
+# only column you edit. Everything else is context to help you remember.
+#
+# Two rows with the SAME manager name become one person, and their whole history merges.
+# Spelling must match exactly (capitalisation does not matter). Leave a row blank if you
+# genuinely do not know; it will just show under its team name.
+#
+# Editing in Excel or Google Sheets is fine — keep the header row and save as CSV.
+# Then run: npm run data
+team_name,manager,seasons,years,record,titles,best_finish
+The Elites,,13,2013 2014 2015 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025,94-80,1,1
+flaccoroni and cheese,,12,2014 2015 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025,79-82,0,2
+Turn Down For Watt,,11,2014 2015 2016 2017 2018 2020 2021 2022 2023 2024 2025,88-60,1,1
+da winning team,,11,2015 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025,85-63,3,1
+Le'Voen a prayer,,11,2015 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025,101-47,4,1
+The Highlanders,,10,2013 2014 2015 2016 2017 2018 2022 2023 2024 2025,67-67,2,1
+Vick's houndogs,,10,2016 2017 2018 2019 2020 2021 2022 2023 2024 2025,65-70,0,2
+The King of Fantasy,,9,2012 2013 2014 2015 2016 2022 2023 2024 2025,66-55,1,1
+Beats by Ray,,7,2015 2016 2017 2018 2019 2020 2021,41-51,0,3
+Go Kart Mozart,,7,2018 2019 2020 2022 2023 2024 2025,51-44,0,3
+SCHMIDTY DUCK,,6,2013 2014 2022 2023 2024 2025,41-41,2,1
+the miracle workers,,4,2018 2019 2020 2021,26-27,0,3
+coles untouchables,,3,2012 2014 2015,13-26,0,6
+swaggy mc swag,,2,2013 2014,8-18,0,8
+Hernandez' Hitmen,,2,2016 2017,10-16,0,7
+UNLEASH THE BEASLEY,,2,2016 2017,10-16,0,8
+Rolling With Mahomies,,2,2020 2021,12-15,0,2
+Milton Mustangs,,1,2012,10-3,0,3
+The Christian Wolverines,,1,2012,5-8,0,4
+THE FIGHTING IRISH,,1,2012,3-10,0,2
+Vipers,,1,2012,6-7,0,5
+Coles 2nd Team,,1,2013,3-10,0,9
+I'mGonnaWhipMichael,,1,2013,4-9,0,8
+Stop Look and Lose,,1,2013,4-9,0,2
+THE BIG MAN ON CAMPUS,,1,2013,7-6,0,7
+THE GUY WHO PICKED UP FOSTER,,1,2013,9-4,0,3
+BULLDOGS,,1,2014,7-6,0,6
+CAMBRIDGE BOY,,1,2014,2-11,0,12
+The fast and the Julio,,1,2014,5-8,0,5
+THE SURF BROS,,1,2014,7-6,0,3
+2legit2quit,,1,2015,3-10,0,10
+Geno's Jawdroppers,,1,2015,8-5,0,5
+GO CART MOZART,,1,2015,0-13,0,14
+HIGHLIGHT REEL,,1,2015,5-8,0,9
+LeGarrette ON MY LEVEL,,1,2015,4-9,0,13
+Injuries Suck,,1,2016,2-11,0,11
+28-3,,1,2017,6-7,0,8
+Why Me,,1,2017,4-9,0,11
+Dak to the future,,1,2019,3-10,0,10
+Goff Balls,,1,2019,3-10,0,8
+The 2002 Miami Hurricanes,,1,2021,7-7,0,7

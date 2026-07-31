@@ -1,0 +1,18 @@
+# Most Player Points. One row per season: the single highest-scoring player week of that season.
+# Source: ESPN Hall of Fame > Most Player Points (data/screenshots/IMG_2091.PNG, IMG_2092.PNG)
+# "rostered_by" is the fantasy team that started the player that week.
+year,player,nfl_team,position,week,points,rostered_by
+2025,J. Gibbs,DET,RB,12,69.90,Turn Down For Watt
+2024,J. Chase,CIN,WR,10,65.40,Turn Down For Watt
+2023,A. Cooper,CLE,WR,16,61.50,The Elites
+2022,J. Jacobs,LV,RB,12,74.80,Go Kart Mozart
+2021,J. Taylor,IND,RB,11,74.40,Le'Voen a prayer
+2020,A. Kamara,NO,RB,16,72.20,da winning team
+2019,A. Jones,GB,RB,5,63.70,Vick's houndogs
+2018,C. McCaffrey,CAR,RB,12,65.20,The Highlanders
+2017,T. Gurley,LA,RB,16,60.60,flaccoroni and cheese
+2016,L. Bell,PIT,RB,14,70.80,The Elites
+2015,D. Johnson,ARI,RB,15,54.00,Le'Voen a prayer
+2014,J. Gray,NE,RB,11,101.80,BULLDOGS
+2013,K. Moreno,DEN,RB,12,88.40,THE KING OF FANTASY
+2012,D. Martin,TB,RB,9,51.20,The Christian Wolverines

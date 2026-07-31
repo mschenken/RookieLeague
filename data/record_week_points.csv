@@ -1,0 +1,21 @@
+# Most Team Points - WEEK. One row per season: that season's single highest team week.
+# Source: ESPN Hall of Fame > Most Team Points > WEEK (data/screenshots/IMG_2087.PNG, IMG_2088.PNG)
+# Truncated names in the app UI resolved against the standings CSV:
+#   "UNLEASH THE BE..."  -> UNLEASH THE BEASLEY
+#   "THE KING OF FAN..." -> THE KING OF FANTASY
+#   "The Christian Wol..." -> The Christian Wolverines
+year,team,week,points
+2025,The Elites,10,218.82
+2024,SCHMIDTY DUCK,16,235.88
+2023,The Highlanders,3,239.64
+2022,Go Kart Mozart,12,255.32
+2021,Vick's houndogs,17,245.18
+2020,Le'Voen a prayer,7,233.78
+2019,Vick's houndogs,8,216.00
+2018,The Highlanders,16,247.96
+2017,Vick's houndogs,8,201.98
+2016,UNLEASH THE BEASLEY,1,209.20
+2015,HIGHLIGHT REEL,3,161.34
+2014,The Highlanders,11,252.54
+2013,THE KING OF FANTASY,12,271.98
+2012,The Christian Wolverines,14,146.80
