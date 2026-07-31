@@ -31,7 +31,12 @@ export default function ManagerPage() {
           {m.seasonCount} season{m.seasonCount === 1 ? '' : 's'} · {m.firstYear}–{m.lastYear}
           {m.titleYears.length > 0 && ` · 🏆 ${m.titleYears.join(', ')}`}
         </p>
-        {aka.length > 0 && <p className="mt-1 text-xs text-muted">Also played as {aka.map((a) => `"${a}"`).join(', ')}</p>}
+        {aka.length > 0 && (
+          <p className="mt-1 max-w-3xl text-xs leading-relaxed text-muted">
+            {aka.length === 1 ? 'Played as ' : `Played as ${aka.length} teams: `}
+            {aka.map((a) => `"${a}"`).join(', ')}
+          </p>
+        )}
       </div>
 
       <dl className="rise mt-5 grid grid-cols-2 gap-px overflow-hidden rounded-xl border border-hair bg-hair sm:grid-cols-4">

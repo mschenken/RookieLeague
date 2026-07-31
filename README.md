@@ -34,8 +34,13 @@ This is the one piece that needs a human. The league has 41 distinct team names 
 new people. Until they are merged, a four-time champion shows up as four unrelated
 one-season teams.
 
+**This is already filled in** — 41 team names map to 17 managers. Edit it only when someone
+joins, leaves, or renames their team.
+
 **Open `data/managers.csv` in Excel or Google Sheets. Type a person's name in the
 `manager` column. That is the only column you touch.** Save as CSV, then run `npm run data`.
+Saving from Sheets adds a stray first line and re-quotes the comments; the parser finds the
+header by looking for the `team_name` column, so that round-trip is safe.
 
 ```csv
 team_name,manager,seasons,years,record,titles,best_finish
@@ -52,9 +57,10 @@ Rows are sorted longest-tenured first. Do those twelve and the leftovers are alm
 the one-season renames.
 
 You can leave rows blank — the site still builds and just shows that team under its own
-name, with a banner on the dashboard counting how many are outstanding. The build only
-fails if a team name is missing from the file entirely or listed twice, which would drop
-or double-count a season.
+name, with a banner on the dashboard counting how many are outstanding. The build **fails**
+if a team name is missing from the file or listed twice (that would drop or double-count a
+season), or if one manager ends up on **two teams in the same season** — impossible for one
+person, so it is the check that catches a misassigned row.
 
 ### Data caveats worth knowing
 
@@ -65,9 +71,10 @@ or double-count a season.
   on identical records share a seed (marked `*` on manager pages). Six seasons have a tie
   straddling the playoff cutoff.
 - **Playoff appearance** is derived from final placement against that year's bracket size,
-  which holds in 10 of 14 seasons. The exceptions are listed in `data/data-warnings.md` —
-  2013 had divisions (winners likely auto-qualified), and 2012 and 2018 need a human
-  verdict against the original standings.
+  set per season in `data/seasons.json`: all 6 teams in 2012, top 6 in 2013, top 8 for
+  2014–2018, top 6 from 2019 on. With those sizes the rule holds in 13 of 14 seasons; the
+  lone exception is 2013, the only year with divisions, where winners likely auto-qualified.
+  See `data/data-warnings.md`.
 - **Records are one row per season.** ESPN's Hall of Fame stores only each season's best
   week / season / player performance, so a manager's second-best week is not in the data
   even if it would rank.

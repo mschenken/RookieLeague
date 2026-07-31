@@ -4,11 +4,12 @@ import { league, managers, managersUnnamed, unmappedTeams } from '../lib/league'
 
 function Snapshot() {
   const titles = league.podium.filter((p) => p.place === 1).length
+  const teamNames = new Set(managers.flatMap((m) => m.teamNames.map((t) => t.toLowerCase())))
   const items = [
     { label: 'Seasons', value: String(league.years.length) },
-    { label: 'Teams all-time', value: String(managers.length) },
+    { label: 'Managers', value: String(managers.length) },
+    { label: 'Team names', value: String(teamNames.size) },
     { label: 'Titles awarded', value: String(titles) },
-    { label: 'Games played', value: String(managers.reduce((s, m) => s + m.games, 0) / 2) },
   ]
   return (
     <dl className="grid grid-cols-2 gap-px overflow-hidden rounded-xl border border-hair bg-hair sm:grid-cols-4">

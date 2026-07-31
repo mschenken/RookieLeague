@@ -104,15 +104,13 @@ export const ordinal = (n: number) => {
   return n + (s[(v - 20) % 10] ?? s[v] ?? s[0])
 }
 
-/** Extra team names a manager used, for the "aka" line. */
+/**
+ * Team names to list under a manager's heading. Once a real person is named, every
+ * team name is an alias worth showing; while unidentified the heading *is* the first
+ * team name, so listing it again would be noise.
+ */
 export function akaFor(m: Manager): string[] {
-  const seen = new Set<string>()
-  const out: string[] = []
-  for (const n of m.teamNames) {
-    const k = n.toLowerCase()
-    if (!seen.has(k)) { seen.add(k); out.push(n) }
-  }
-  return out.slice(1)
+  return m.identified ? m.teamNames : m.teamNames.slice(1)
 }
 
 /** True while some team names have no manager filled in in data/managers.csv. */

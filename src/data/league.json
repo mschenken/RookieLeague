@@ -20,7 +20,7 @@
     {
       "year": 2012,
       "teamCount": 6,
-      "playoffSpots": 4,
+      "playoffSpots": 6,
       "divisions": 1
     },
     {
@@ -56,7 +56,7 @@
     {
       "year": 2018,
       "teamCount": 10,
-      "playoffSpots": 6,
+      "playoffSpots": 8,
       "divisions": 1
     },
     {
@@ -102,17 +102,34 @@
       "divisions": 1
     }
   ],
-  "managersComplete": false,
-  "unmappedTeams": 41,
+  "managersComplete": true,
+  "unmappedTeams": 0,
   "managers": [
     {
-      "id": "the-elites",
-      "name": "The Elites",
-      "identified": false,
+      "id": "eli",
+      "name": "Eli",
+      "identified": true,
       "teamNames": [
+        "The Christian Wolverines",
         "The Elites"
       ],
       "seasons": [
+        {
+          "year": 2012,
+          "team": "The Christian Wolverines",
+          "w": 5,
+          "l": 8,
+          "t": 0,
+          "winPct": 0.385,
+          "seed": 4,
+          "seedShared": true,
+          "finalRank": 4,
+          "teamCount": 6,
+          "playoffSpots": 6,
+          "madePlayoffs": true,
+          "seedVsFinish": 0,
+          "placementPct": 0.4
+        },
         {
           "year": 2013,
           "team": "The Elites",
@@ -204,7 +221,7 @@
           "seedShared": false,
           "finalRank": 9,
           "teamCount": 10,
-          "playoffSpots": 6,
+          "playoffSpots": 8,
           "madePlayoffs": false,
           "seedVsFinish": null,
           "placementPct": 0.111
@@ -322,14 +339,14 @@
           "placementPct": 0.889
         }
       ],
-      "firstYear": 2013,
+      "firstYear": 2012,
       "lastYear": 2025,
-      "seasonCount": 13,
-      "w": 94,
-      "l": 80,
+      "seasonCount": 14,
+      "w": 99,
+      "l": 88,
       "t": 0,
-      "games": 174,
-      "winPct": 0.54,
+      "games": 187,
+      "winPct": 0.529,
       "championships": 1,
       "runnerUps": 3,
       "thirdPlace": 0,
@@ -339,23 +356,39 @@
       "titleYears": [
         2017
       ],
-      "playoffAppearances": 9,
-      "playoffRate": 0.692,
-      "avgFinish": 5.31,
-      "avgFinishPct": 0.548,
+      "playoffAppearances": 10,
+      "playoffRate": 0.714,
+      "avgFinish": 5.21,
+      "avgFinishPct": 0.537,
       "bestFinish": 1,
-      "seedVsFinish": -1.56,
-      "seedVsFinishSeasons": 9
+      "seedVsFinish": -1.4,
+      "seedVsFinishSeasons": 10
     },
     {
-      "id": "flaccoroni-and-cheese",
-      "name": "flaccoroni and cheese",
-      "identified": false,
+      "id": "michael",
+      "name": "Michael",
+      "identified": true,
       "teamNames": [
-        "Flaccoroni and cheese",
+        "Stop Look and Lose",
         "flaccoroni and cheese"
       ],
       "seasons": [
+        {
+          "year": 2013,
+          "team": "Stop Look and Lose",
+          "w": 4,
+          "l": 9,
+          "t": 0,
+          "winPct": 0.308,
+          "seed": 7,
+          "seedShared": true,
+          "finalRank": 2,
+          "teamCount": 10,
+          "playoffSpots": 6,
+          "madePlayoffs": true,
+          "seedVsFinish": 5,
+          "placementPct": 0.889
+        },
         {
           "year": 2014,
           "team": "Flaccoroni and cheese",
@@ -431,7 +464,7 @@
           "seedShared": true,
           "finalRank": 2,
           "teamCount": 10,
-          "playoffSpots": 6,
+          "playoffSpots": 8,
           "madePlayoffs": true,
           "seedVsFinish": 0,
           "placementPct": 0.889
@@ -549,35 +582,36 @@
           "placementPct": 0.556
         }
       ],
-      "firstYear": 2014,
+      "firstYear": 2013,
       "lastYear": 2025,
-      "seasonCount": 12,
-      "w": 79,
-      "l": 82,
+      "seasonCount": 13,
+      "w": 83,
+      "l": 91,
       "t": 0,
-      "games": 161,
-      "winPct": 0.491,
+      "games": 174,
+      "winPct": 0.477,
       "championships": 0,
-      "runnerUps": 2,
+      "runnerUps": 3,
       "thirdPlace": 2,
-      "podiums": 4,
-      "finalsAppearances": 2,
+      "podiums": 5,
+      "finalsAppearances": 3,
       "titleRate": 0,
       "titleYears": [],
-      "playoffAppearances": 8,
-      "playoffRate": 0.667,
-      "avgFinish": 5.33,
-      "avgFinishPct": 0.559,
+      "playoffAppearances": 9,
+      "playoffRate": 0.692,
+      "avgFinish": 5.08,
+      "avgFinishPct": 0.584,
       "bestFinish": 2,
-      "seedVsFinish": -0.25,
-      "seedVsFinishSeasons": 8
+      "seedVsFinish": 0.33,
+      "seedVsFinishSeasons": 9
     },
     {
-      "id": "turn-down-for-watt",
-      "name": "Turn Down For Watt",
-      "identified": false,
+      "id": "lansden",
+      "name": "Lansden",
+      "identified": true,
       "teamNames": [
-        "Turn Down For Watt"
+        "Turn Down For Watt",
+        "Goff Balls"
       ],
       "seasons": [
         {
@@ -653,6 +687,22 @@
           "winPct": 0.385,
           "seed": 8,
           "seedShared": false,
+          "finalRank": 8,
+          "teamCount": 10,
+          "playoffSpots": 8,
+          "madePlayoffs": true,
+          "seedVsFinish": 0,
+          "placementPct": 0.222
+        },
+        {
+          "year": 2019,
+          "team": "Goff Balls",
+          "w": 3,
+          "l": 10,
+          "t": 0,
+          "winPct": 0.231,
+          "seed": 9,
+          "seedShared": true,
           "finalRank": 8,
           "teamCount": 10,
           "playoffSpots": 6,
@@ -759,12 +809,12 @@
       ],
       "firstYear": 2014,
       "lastYear": 2025,
-      "seasonCount": 11,
-      "w": 88,
-      "l": 60,
+      "seasonCount": 12,
+      "w": 91,
+      "l": 70,
       "t": 0,
-      "games": 148,
-      "winPct": 0.595,
+      "games": 161,
+      "winPct": 0.565,
       "championships": 1,
       "runnerUps": 1,
       "thirdPlace": 1,
@@ -774,18 +824,18 @@
       "titleYears": [
         2022
       ],
-      "playoffAppearances": 9,
-      "playoffRate": 0.818,
-      "avgFinish": 5.09,
-      "avgFinishPct": 0.577,
+      "playoffAppearances": 10,
+      "playoffRate": 0.833,
+      "avgFinish": 5.33,
+      "avgFinishPct": 0.548,
       "bestFinish": 1,
-      "seedVsFinish": -1.67,
-      "seedVsFinishSeasons": 9
+      "seedVsFinish": -1.5,
+      "seedVsFinishSeasons": 10
     },
     {
-      "id": "da-winning-team",
-      "name": "da winning team",
-      "identified": false,
+      "id": "finn",
+      "name": "Finn",
+      "identified": true,
       "teamNames": [
         "da winning team"
       ],
@@ -849,7 +899,7 @@
           "seedShared": true,
           "finalRank": 6,
           "teamCount": 10,
-          "playoffSpots": 6,
+          "playoffSpots": 8,
           "madePlayoffs": true,
           "seedVsFinish": -2,
           "placementPct": 0.444
@@ -995,9 +1045,9 @@
       "seedVsFinishSeasons": 10
     },
     {
-      "id": "le-voen-a-prayer",
-      "name": "Le'Voen a prayer",
-      "identified": false,
+      "id": "caleb",
+      "name": "Caleb",
+      "identified": true,
       "teamNames": [
         "Le'Voen a prayer"
       ],
@@ -1061,7 +1111,7 @@
           "seedShared": false,
           "finalRank": 5,
           "teamCount": 10,
-          "playoffSpots": 6,
+          "playoffSpots": 8,
           "madePlayoffs": true,
           "seedVsFinish": 2,
           "placementPct": 0.556
@@ -1208,11 +1258,13 @@
       "seedVsFinishSeasons": 10
     },
     {
-      "id": "the-highlanders",
-      "name": "The Highlanders",
-      "identified": false,
+      "id": "evan",
+      "name": "Evan",
+      "identified": true,
       "teamNames": [
-        "The Highlanders"
+        "The Highlanders",
+        "Dak to the future",
+        "Rolling With Mahomies"
       ],
       "seasons": [
         {
@@ -1306,10 +1358,58 @@
           "seedShared": false,
           "finalRank": 1,
           "teamCount": 10,
-          "playoffSpots": 6,
+          "playoffSpots": 8,
           "madePlayoffs": true,
           "seedVsFinish": 0,
           "placementPct": 1
+        },
+        {
+          "year": 2019,
+          "team": "Dak to the future",
+          "w": 3,
+          "l": 10,
+          "t": 0,
+          "winPct": 0.231,
+          "seed": 9,
+          "seedShared": true,
+          "finalRank": 10,
+          "teamCount": 10,
+          "playoffSpots": 6,
+          "madePlayoffs": false,
+          "seedVsFinish": null,
+          "placementPct": 0
+        },
+        {
+          "year": 2020,
+          "team": "Rolling With Mahomies",
+          "w": 9,
+          "l": 4,
+          "t": 0,
+          "winPct": 0.692,
+          "seed": 2,
+          "seedShared": false,
+          "finalRank": 2,
+          "teamCount": 10,
+          "playoffSpots": 6,
+          "madePlayoffs": true,
+          "seedVsFinish": 0,
+          "placementPct": 0.889
+        },
+        {
+          "year": 2021,
+          "team": "Rolling With Mahomies",
+          "w": 3,
+          "l": 11,
+          "t": 0,
+          "winPct": 0.214,
+          "seed": 9,
+          "seedShared": true,
+          "finalRank": 9,
+          "teamCount": 10,
+          "playoffSpots": 6,
+          "madePlayoffs": false,
+          "seedVsFinish": null,
+          "placementPct": 0.111
         },
         {
           "year": 2022,
@@ -1378,38 +1478,72 @@
       ],
       "firstYear": 2013,
       "lastYear": 2025,
-      "seasonCount": 10,
-      "w": 67,
-      "l": 67,
+      "seasonCount": 13,
+      "w": 82,
+      "l": 92,
       "t": 0,
-      "games": 134,
-      "winPct": 0.5,
+      "games": 174,
+      "winPct": 0.471,
       "championships": 2,
-      "runnerUps": 0,
+      "runnerUps": 1,
       "thirdPlace": 0,
-      "podiums": 2,
-      "finalsAppearances": 2,
-      "titleRate": 1,
+      "podiums": 3,
+      "finalsAppearances": 3,
+      "titleRate": 0.667,
       "titleYears": [
         2014,
         2018
       ],
-      "playoffAppearances": 4,
-      "playoffRate": 0.4,
+      "playoffAppearances": 5,
+      "playoffRate": 0.385,
       "avgFinish": 7,
-      "avgFinishPct": 0.405,
+      "avgFinishPct": 0.389,
       "bestFinish": 1,
-      "seedVsFinish": 0.5,
-      "seedVsFinishSeasons": 4
+      "seedVsFinish": 0.4,
+      "seedVsFinishSeasons": 5
     },
     {
-      "id": "vick-s-houndogs",
-      "name": "Vick's houndogs",
-      "identified": false,
+      "id": "nathan",
+      "name": "Nathan",
+      "identified": true,
       "teamNames": [
+        "BULLDOGS",
+        "Geno's Jawdroppers",
         "Vick's houndogs"
       ],
       "seasons": [
+        {
+          "year": 2014,
+          "team": "BULLDOGS",
+          "w": 7,
+          "l": 6,
+          "t": 0,
+          "winPct": 0.538,
+          "seed": 5,
+          "seedShared": true,
+          "finalRank": 6,
+          "teamCount": 12,
+          "playoffSpots": 8,
+          "madePlayoffs": true,
+          "seedVsFinish": -1,
+          "placementPct": 0.545
+        },
+        {
+          "year": 2015,
+          "team": "Geno's Jawdroppers",
+          "w": 8,
+          "l": 5,
+          "t": 0,
+          "winPct": 0.615,
+          "seed": 2,
+          "seedShared": true,
+          "finalRank": 5,
+          "teamCount": 14,
+          "playoffSpots": 8,
+          "madePlayoffs": true,
+          "seedVsFinish": -3,
+          "placementPct": 0.692
+        },
         {
           "year": 2016,
           "team": "Vick's houndogs",
@@ -1453,7 +1587,7 @@
           "seedShared": false,
           "finalRank": 10,
           "teamCount": 10,
-          "playoffSpots": 6,
+          "playoffSpots": 8,
           "madePlayoffs": false,
           "seedVsFinish": null,
           "placementPct": 0
@@ -1571,14 +1705,14 @@
           "placementPct": 0.333
         }
       ],
-      "firstYear": 2016,
+      "firstYear": 2014,
       "lastYear": 2025,
-      "seasonCount": 10,
-      "w": 65,
-      "l": 70,
+      "seasonCount": 12,
+      "w": 80,
+      "l": 81,
       "t": 0,
-      "games": 135,
-      "winPct": 0.481,
+      "games": 161,
+      "winPct": 0.497,
       "championships": 0,
       "runnerUps": 1,
       "thirdPlace": 2,
@@ -1586,21 +1720,22 @@
       "finalsAppearances": 1,
       "titleRate": 0,
       "titleYears": [],
-      "playoffAppearances": 7,
-      "playoffRate": 0.7,
-      "avgFinish": 5.4,
-      "avgFinishPct": 0.525,
+      "playoffAppearances": 9,
+      "playoffRate": 0.75,
+      "avgFinish": 5.42,
+      "avgFinishPct": 0.541,
       "bestFinish": 2,
-      "seedVsFinish": 0.29,
-      "seedVsFinishSeasons": 7
+      "seedVsFinish": -0.22,
+      "seedVsFinishSeasons": 9
     },
     {
-      "id": "the-king-of-fantasy",
-      "name": "The King of Fantasy",
-      "identified": false,
+      "id": "brady",
+      "name": "Brady",
+      "identified": true,
       "teamNames": [
-        "THE KING OF FANTASY",
-        "The King of Fantasy"
+        "The King of Fantasy",
+        "28-3",
+        "the miracle workers"
       ],
       "seasons": [
         {
@@ -1614,7 +1749,7 @@
           "seedShared": true,
           "finalRank": 1,
           "teamCount": 6,
-          "playoffSpots": 4,
+          "playoffSpots": 6,
           "madePlayoffs": true,
           "seedVsFinish": 0,
           "placementPct": 1
@@ -1684,6 +1819,86 @@
           "placementPct": 0.727
         },
         {
+          "year": 2017,
+          "team": "28-3",
+          "w": 6,
+          "l": 7,
+          "t": 0,
+          "winPct": 0.462,
+          "seed": 7,
+          "seedShared": false,
+          "finalRank": 8,
+          "teamCount": 12,
+          "playoffSpots": 8,
+          "madePlayoffs": true,
+          "seedVsFinish": -1,
+          "placementPct": 0.364
+        },
+        {
+          "year": 2018,
+          "team": "the miracle workers",
+          "w": 7,
+          "l": 6,
+          "t": 0,
+          "winPct": 0.538,
+          "seed": 4,
+          "seedShared": true,
+          "finalRank": 4,
+          "teamCount": 10,
+          "playoffSpots": 8,
+          "madePlayoffs": true,
+          "seedVsFinish": 0,
+          "placementPct": 0.667
+        },
+        {
+          "year": 2019,
+          "team": "the miracle workers",
+          "w": 7,
+          "l": 6,
+          "t": 0,
+          "winPct": 0.538,
+          "seed": 6,
+          "seedShared": true,
+          "finalRank": 6,
+          "teamCount": 10,
+          "playoffSpots": 6,
+          "madePlayoffs": true,
+          "seedVsFinish": 0,
+          "placementPct": 0.444
+        },
+        {
+          "year": 2020,
+          "team": "the miracle workers",
+          "w": 6,
+          "l": 7,
+          "t": 0,
+          "winPct": 0.462,
+          "seed": 6,
+          "seedShared": false,
+          "finalRank": 3,
+          "teamCount": 10,
+          "playoffSpots": 6,
+          "madePlayoffs": true,
+          "seedVsFinish": 3,
+          "placementPct": 0.778
+        },
+        {
+          "year": 2021,
+          "team": "the miracle workers",
+          "w": 6,
+          "l": 8,
+          "t": 0,
+          "winPct": 0.429,
+          "seed": 8,
+          "seedShared": false,
+          "finalRank": 8,
+          "teamCount": 10,
+          "playoffSpots": 6,
+          "madePlayoffs": false,
+          "seedVsFinish": null,
+          "placementPct": 0.222
+        },
+        {
           "year": 2022,
           "team": "The King of Fantasy",
           "w": 7,
@@ -1750,37 +1965,70 @@
       ],
       "firstYear": 2012,
       "lastYear": 2025,
-      "seasonCount": 9,
-      "w": 66,
-      "l": 55,
+      "seasonCount": 14,
+      "w": 98,
+      "l": 89,
       "t": 0,
-      "games": 121,
-      "winPct": 0.545,
+      "games": 187,
+      "winPct": 0.524,
       "championships": 1,
       "runnerUps": 1,
-      "thirdPlace": 0,
-      "podiums": 2,
+      "thirdPlace": 1,
+      "podiums": 3,
       "finalsAppearances": 2,
       "titleRate": 0.5,
       "titleYears": [
         2012
       ],
-      "playoffAppearances": 6,
-      "playoffRate": 0.667,
-      "avgFinish": 5.78,
-      "avgFinishPct": 0.498,
+      "playoffAppearances": 10,
+      "playoffRate": 0.714,
+      "avgFinish": 5.79,
+      "avgFinishPct": 0.497,
       "bestFinish": 1,
-      "seedVsFinish": -1.5,
-      "seedVsFinishSeasons": 6
+      "seedVsFinish": -0.7,
+      "seedVsFinishSeasons": 10
     },
     {
-      "id": "beats-by-ray",
-      "name": "Beats by Ray",
-      "identified": false,
+      "id": "luke",
+      "name": "Luke",
+      "identified": true,
       "teamNames": [
+        "SCHMIDTY DUCK",
         "Beats by Ray"
       ],
       "seasons": [
+        {
+          "year": 2013,
+          "team": "SCHMIDTY DUCK",
+          "w": 10,
+          "l": 3,
+          "t": 0,
+          "winPct": 0.769,
+          "seed": 1,
+          "seedShared": true,
+          "finalRank": 1,
+          "teamCount": 10,
+          "playoffSpots": 6,
+          "madePlayoffs": true,
+          "seedVsFinish": 0,
+          "placementPct": 1
+        },
+        {
+          "year": 2014,
+          "team": "SCHMIDTY DUCK",
+          "w": 2,
+          "l": 11,
+          "t": 0,
+          "winPct": 0.154,
+          "seed": 10,
+          "seedShared": true,
+          "finalRank": 11,
+          "teamCount": 12,
+          "playoffSpots": 8,
+          "madePlayoffs": false,
+          "seedVsFinish": null,
+          "placementPct": 0.091
+        },
         {
           "year": 2015,
           "team": "Beats by Ray",
@@ -1840,7 +2088,7 @@
           "seedShared": true,
           "finalRank": 3,
           "teamCount": 10,
-          "playoffSpots": 6,
+          "playoffSpots": 8,
           "madePlayoffs": true,
           "seedVsFinish": -1,
           "placementPct": 0.778
@@ -1892,214 +2140,6 @@
           "madePlayoffs": false,
           "seedVsFinish": null,
           "placementPct": 0
-        }
-      ],
-      "firstYear": 2015,
-      "lastYear": 2021,
-      "seasonCount": 7,
-      "w": 41,
-      "l": 51,
-      "t": 0,
-      "games": 92,
-      "winPct": 0.446,
-      "championships": 0,
-      "runnerUps": 0,
-      "thirdPlace": 1,
-      "podiums": 1,
-      "finalsAppearances": 0,
-      "titleRate": null,
-      "titleYears": [],
-      "playoffAppearances": 3,
-      "playoffRate": 0.429,
-      "avgFinish": 7.29,
-      "avgFinishPct": 0.365,
-      "bestFinish": 3,
-      "seedVsFinish": -2,
-      "seedVsFinishSeasons": 3
-    },
-    {
-      "id": "go-kart-mozart",
-      "name": "Go Kart Mozart",
-      "identified": false,
-      "teamNames": [
-        "Go Kart Mozart"
-      ],
-      "seasons": [
-        {
-          "year": 2018,
-          "team": "Go Kart Mozart",
-          "w": 7,
-          "l": 6,
-          "t": 0,
-          "winPct": 0.538,
-          "seed": 4,
-          "seedShared": true,
-          "finalRank": 7,
-          "teamCount": 10,
-          "playoffSpots": 6,
-          "madePlayoffs": false,
-          "seedVsFinish": null,
-          "placementPct": 0.333
-        },
-        {
-          "year": 2019,
-          "team": "Go Kart Mozart",
-          "w": 7,
-          "l": 6,
-          "t": 0,
-          "winPct": 0.538,
-          "seed": 6,
-          "seedShared": true,
-          "finalRank": 7,
-          "teamCount": 10,
-          "playoffSpots": 6,
-          "madePlayoffs": false,
-          "seedVsFinish": null,
-          "placementPct": 0.333
-        },
-        {
-          "year": 2020,
-          "team": "Go Kart Mozart",
-          "w": 8,
-          "l": 5,
-          "t": 0,
-          "winPct": 0.615,
-          "seed": 3,
-          "seedShared": false,
-          "finalRank": 6,
-          "teamCount": 10,
-          "playoffSpots": 6,
-          "madePlayoffs": true,
-          "seedVsFinish": -3,
-          "placementPct": 0.444
-        },
-        {
-          "year": 2022,
-          "team": "Go Kart Mozart",
-          "w": 11,
-          "l": 3,
-          "t": 0,
-          "winPct": 0.786,
-          "seed": 1,
-          "seedShared": false,
-          "finalRank": 3,
-          "teamCount": 10,
-          "playoffSpots": 6,
-          "madePlayoffs": true,
-          "seedVsFinish": -2,
-          "placementPct": 0.778
-        },
-        {
-          "year": 2023,
-          "team": "Go Kart Mozart",
-          "w": 9,
-          "l": 5,
-          "t": 0,
-          "winPct": 0.643,
-          "seed": 2,
-          "seedShared": true,
-          "finalRank": 6,
-          "teamCount": 10,
-          "playoffSpots": 6,
-          "madePlayoffs": true,
-          "seedVsFinish": -4,
-          "placementPct": 0.444
-        },
-        {
-          "year": 2024,
-          "team": "Go Kart Mozart",
-          "w": 3,
-          "l": 11,
-          "t": 0,
-          "winPct": 0.214,
-          "seed": 10,
-          "seedShared": false,
-          "finalRank": 10,
-          "teamCount": 10,
-          "playoffSpots": 6,
-          "madePlayoffs": false,
-          "seedVsFinish": null,
-          "placementPct": 0
-        },
-        {
-          "year": 2025,
-          "team": "Go Kart Mozart",
-          "w": 6,
-          "l": 8,
-          "t": 0,
-          "winPct": 0.429,
-          "seed": 5,
-          "seedShared": true,
-          "finalRank": 4,
-          "teamCount": 10,
-          "playoffSpots": 6,
-          "madePlayoffs": true,
-          "seedVsFinish": 1,
-          "placementPct": 0.667
-        }
-      ],
-      "firstYear": 2018,
-      "lastYear": 2025,
-      "seasonCount": 7,
-      "w": 51,
-      "l": 44,
-      "t": 0,
-      "games": 95,
-      "winPct": 0.537,
-      "championships": 0,
-      "runnerUps": 0,
-      "thirdPlace": 1,
-      "podiums": 1,
-      "finalsAppearances": 0,
-      "titleRate": null,
-      "titleYears": [],
-      "playoffAppearances": 4,
-      "playoffRate": 0.571,
-      "avgFinish": 6.14,
-      "avgFinishPct": 0.428,
-      "bestFinish": 3,
-      "seedVsFinish": -2,
-      "seedVsFinishSeasons": 4
-    },
-    {
-      "id": "schmidty-duck",
-      "name": "SCHMIDTY DUCK",
-      "identified": false,
-      "teamNames": [
-        "SCHMIDTY DUCK"
-      ],
-      "seasons": [
-        {
-          "year": 2013,
-          "team": "SCHMIDTY DUCK",
-          "w": 10,
-          "l": 3,
-          "t": 0,
-          "winPct": 0.769,
-          "seed": 1,
-          "seedShared": true,
-          "finalRank": 1,
-          "teamCount": 10,
-          "playoffSpots": 6,
-          "madePlayoffs": true,
-          "seedVsFinish": 0,
-          "placementPct": 1
-        },
-        {
-          "year": 2014,
-          "team": "SCHMIDTY DUCK",
-          "w": 2,
-          "l": 11,
-          "t": 0,
-          "winPct": 0.154,
-          "seed": 10,
-          "seedShared": true,
-          "finalRank": 11,
-          "teamCount": 12,
-          "playoffSpots": 8,
-          "madePlayoffs": false,
-          "seedVsFinish": null,
-          "placementPct": 0.091
         },
         {
           "year": 2022,
@@ -2168,133 +2208,300 @@
       ],
       "firstYear": 2013,
       "lastYear": 2025,
-      "seasonCount": 6,
-      "w": 41,
-      "l": 41,
+      "seasonCount": 13,
+      "w": 82,
+      "l": 92,
       "t": 0,
-      "games": 82,
-      "winPct": 0.5,
+      "games": 174,
+      "winPct": 0.471,
       "championships": 2,
       "runnerUps": 1,
-      "thirdPlace": 0,
-      "podiums": 3,
+      "thirdPlace": 1,
+      "podiums": 4,
       "finalsAppearances": 3,
       "titleRate": 0.667,
       "titleYears": [
         2013,
         2025
       ],
-      "playoffAppearances": 3,
-      "playoffRate": 0.5,
-      "avgFinish": 5.17,
-      "avgFinishPct": 0.571,
+      "playoffAppearances": 6,
+      "playoffRate": 0.462,
+      "avgFinish": 6.31,
+      "avgFinishPct": 0.46,
       "bestFinish": 1,
-      "seedVsFinish": 0.33,
-      "seedVsFinishSeasons": 3
+      "seedVsFinish": -0.83,
+      "seedVsFinishSeasons": 6
     },
     {
-      "id": "the-miracle-workers",
-      "name": "the miracle workers",
-      "identified": false,
+      "id": "moose",
+      "name": "Moose",
+      "identified": true,
       "teamNames": [
-        "the miracle workers"
+        "THE FIGHTING IRISH",
+        "THE GUY WHO PICKED UP FOSTER",
+        "THE SURF BROS",
+        "GO CART MOZART",
+        "Injuries Suck",
+        "Why Me",
+        "Go Kart Mozart",
+        "The 2002 Miami Hurricanes"
       ],
       "seasons": [
         {
+          "year": 2012,
+          "team": "THE FIGHTING IRISH",
+          "w": 3,
+          "l": 10,
+          "t": 0,
+          "winPct": 0.231,
+          "seed": 6,
+          "seedShared": false,
+          "finalRank": 2,
+          "teamCount": 6,
+          "playoffSpots": 6,
+          "madePlayoffs": true,
+          "seedVsFinish": 4,
+          "placementPct": 0.8
+        },
+        {
+          "year": 2013,
+          "team": "THE GUY WHO PICKED UP FOSTER",
+          "w": 9,
+          "l": 4,
+          "t": 0,
+          "winPct": 0.692,
+          "seed": 3,
+          "seedShared": false,
+          "finalRank": 3,
+          "teamCount": 10,
+          "playoffSpots": 6,
+          "madePlayoffs": true,
+          "seedVsFinish": 0,
+          "placementPct": 0.778
+        },
+        {
+          "year": 2014,
+          "team": "THE SURF BROS",
+          "w": 7,
+          "l": 6,
+          "t": 0,
+          "winPct": 0.538,
+          "seed": 5,
+          "seedShared": true,
+          "finalRank": 3,
+          "teamCount": 12,
+          "playoffSpots": 8,
+          "madePlayoffs": true,
+          "seedVsFinish": 2,
+          "placementPct": 0.818
+        },
+        {
+          "year": 2015,
+          "team": "GO CART MOZART",
+          "w": 0,
+          "l": 13,
+          "t": 0,
+          "winPct": 0,
+          "seed": 14,
+          "seedShared": false,
+          "finalRank": 14,
+          "teamCount": 14,
+          "playoffSpots": 8,
+          "madePlayoffs": false,
+          "seedVsFinish": null,
+          "placementPct": 0
+        },
+        {
+          "year": 2016,
+          "team": "Injuries Suck",
+          "w": 2,
+          "l": 11,
+          "t": 0,
+          "winPct": 0.154,
+          "seed": 12,
+          "seedShared": false,
+          "finalRank": 11,
+          "teamCount": 12,
+          "playoffSpots": 8,
+          "madePlayoffs": false,
+          "seedVsFinish": null,
+          "placementPct": 0.091
+        },
+        {
+          "year": 2017,
+          "team": "Why Me",
+          "w": 4,
+          "l": 9,
+          "t": 0,
+          "winPct": 0.308,
+          "seed": 9,
+          "seedShared": true,
+          "finalRank": 11,
+          "teamCount": 12,
+          "playoffSpots": 8,
+          "madePlayoffs": false,
+          "seedVsFinish": null,
+          "placementPct": 0.091
+        },
+        {
           "year": 2018,
-          "team": "the miracle workers",
+          "team": "Go Kart Mozart",
           "w": 7,
           "l": 6,
           "t": 0,
           "winPct": 0.538,
           "seed": 4,
           "seedShared": true,
-          "finalRank": 4,
+          "finalRank": 7,
           "teamCount": 10,
-          "playoffSpots": 6,
+          "playoffSpots": 8,
           "madePlayoffs": true,
-          "seedVsFinish": 0,
-          "placementPct": 0.667
+          "seedVsFinish": -3,
+          "placementPct": 0.333
         },
         {
           "year": 2019,
-          "team": "the miracle workers",
+          "team": "Go Kart Mozart",
           "w": 7,
           "l": 6,
           "t": 0,
           "winPct": 0.538,
           "seed": 6,
           "seedShared": true,
+          "finalRank": 7,
+          "teamCount": 10,
+          "playoffSpots": 6,
+          "madePlayoffs": false,
+          "seedVsFinish": null,
+          "placementPct": 0.333
+        },
+        {
+          "year": 2020,
+          "team": "Go Kart Mozart",
+          "w": 8,
+          "l": 5,
+          "t": 0,
+          "winPct": 0.615,
+          "seed": 3,
+          "seedShared": false,
           "finalRank": 6,
           "teamCount": 10,
           "playoffSpots": 6,
           "madePlayoffs": true,
-          "seedVsFinish": 0,
+          "seedVsFinish": -3,
           "placementPct": 0.444
         },
         {
-          "year": 2020,
-          "team": "the miracle workers",
-          "w": 6,
+          "year": 2021,
+          "team": "The 2002 Miami Hurricanes",
+          "w": 7,
           "l": 7,
           "t": 0,
-          "winPct": 0.462,
-          "seed": 6,
+          "winPct": 0.5,
+          "seed": 5,
+          "seedShared": true,
+          "finalRank": 7,
+          "teamCount": 10,
+          "playoffSpots": 6,
+          "madePlayoffs": false,
+          "seedVsFinish": null,
+          "placementPct": 0.333
+        },
+        {
+          "year": 2022,
+          "team": "Go Kart Mozart",
+          "w": 11,
+          "l": 3,
+          "t": 0,
+          "winPct": 0.786,
+          "seed": 1,
           "seedShared": false,
           "finalRank": 3,
           "teamCount": 10,
           "playoffSpots": 6,
           "madePlayoffs": true,
-          "seedVsFinish": 3,
+          "seedVsFinish": -2,
           "placementPct": 0.778
         },
         {
-          "year": 2021,
-          "team": "the miracle workers",
-          "w": 6,
-          "l": 8,
+          "year": 2023,
+          "team": "Go Kart Mozart",
+          "w": 9,
+          "l": 5,
           "t": 0,
-          "winPct": 0.429,
-          "seed": 8,
+          "winPct": 0.643,
+          "seed": 2,
+          "seedShared": true,
+          "finalRank": 6,
+          "teamCount": 10,
+          "playoffSpots": 6,
+          "madePlayoffs": true,
+          "seedVsFinish": -4,
+          "placementPct": 0.444
+        },
+        {
+          "year": 2024,
+          "team": "Go Kart Mozart",
+          "w": 3,
+          "l": 11,
+          "t": 0,
+          "winPct": 0.214,
+          "seed": 10,
           "seedShared": false,
-          "finalRank": 8,
+          "finalRank": 10,
           "teamCount": 10,
           "playoffSpots": 6,
           "madePlayoffs": false,
           "seedVsFinish": null,
-          "placementPct": 0.222
+          "placementPct": 0
+        },
+        {
+          "year": 2025,
+          "team": "Go Kart Mozart",
+          "w": 6,
+          "l": 8,
+          "t": 0,
+          "winPct": 0.429,
+          "seed": 5,
+          "seedShared": true,
+          "finalRank": 4,
+          "teamCount": 10,
+          "playoffSpots": 6,
+          "madePlayoffs": true,
+          "seedVsFinish": 1,
+          "placementPct": 0.667
         }
       ],
-      "firstYear": 2018,
-      "lastYear": 2021,
-      "seasonCount": 4,
-      "w": 26,
-      "l": 27,
+      "firstYear": 2012,
+      "lastYear": 2025,
+      "seasonCount": 14,
+      "w": 83,
+      "l": 104,
       "t": 0,
-      "games": 53,
-      "winPct": 0.491,
+      "games": 187,
+      "winPct": 0.444,
       "championships": 0,
-      "runnerUps": 0,
-      "thirdPlace": 1,
-      "podiums": 1,
-      "finalsAppearances": 0,
-      "titleRate": null,
+      "runnerUps": 1,
+      "thirdPlace": 3,
+      "podiums": 4,
+      "finalsAppearances": 1,
+      "titleRate": 0,
       "titleYears": [],
-      "playoffAppearances": 3,
-      "playoffRate": 0.75,
-      "avgFinish": 5.25,
-      "avgFinishPct": 0.528,
-      "bestFinish": 3,
-      "seedVsFinish": 1,
-      "seedVsFinishSeasons": 3
+      "playoffAppearances": 8,
+      "playoffRate": 0.571,
+      "avgFinish": 6.71,
+      "avgFinishPct": 0.422,
+      "bestFinish": 2,
+      "seedVsFinish": -0.62,
+      "seedVsFinishSeasons": 8
     },
     {
-      "id": "coles-untouchables",
-      "name": "coles untouchables",
-      "identified": false,
+      "id": "cole",
+      "name": "Cole",
+      "identified": true,
       "teamNames": [
         "coles untouchables",
-        "Coles untouchables"
+        "Coles 2nd Team"
       ],
       "seasons": [
         {
@@ -2308,10 +2515,26 @@
           "seedShared": true,
           "finalRank": 6,
           "teamCount": 6,
-          "playoffSpots": 4,
+          "playoffSpots": 6,
+          "madePlayoffs": true,
+          "seedVsFinish": -2,
+          "placementPct": 0
+        },
+        {
+          "year": 2013,
+          "team": "Coles 2nd Team",
+          "w": 3,
+          "l": 10,
+          "t": 0,
+          "winPct": 0.231,
+          "seed": 9,
+          "seedShared": true,
+          "finalRank": 9,
+          "teamCount": 10,
+          "playoffSpots": 6,
           "madePlayoffs": false,
           "seedVsFinish": null,
-          "placementPct": 0
+          "placementPct": 0.111
         },
         {
           "year": 2014,
@@ -2348,12 +2571,12 @@
       ],
       "firstYear": 2012,
       "lastYear": 2015,
-      "seasonCount": 3,
-      "w": 13,
-      "l": 26,
+      "seasonCount": 4,
+      "w": 16,
+      "l": 36,
       "t": 0,
-      "games": 39,
-      "winPct": 0.333,
+      "games": 52,
+      "winPct": 0.308,
       "championships": 0,
       "runnerUps": 0,
       "thirdPlace": 0,
@@ -2361,22 +2584,39 @@
       "finalsAppearances": 0,
       "titleRate": null,
       "titleYears": [],
-      "playoffAppearances": 0,
-      "playoffRate": 0,
+      "playoffAppearances": 1,
+      "playoffRate": 0.25,
       "avgFinish": 9,
-      "avgFinishPct": 0.138,
+      "avgFinishPct": 0.131,
       "bestFinish": 6,
-      "seedVsFinish": null,
-      "seedVsFinishSeasons": 0
+      "seedVsFinish": -2,
+      "seedVsFinishSeasons": 1
     },
     {
-      "id": "swaggy-mc-swag",
-      "name": "swaggy mc swag",
-      "identified": false,
+      "id": "connor",
+      "name": "Connor",
+      "identified": true,
       "teamNames": [
+        "Vipers",
         "swaggy mc swag"
       ],
       "seasons": [
+        {
+          "year": 2012,
+          "team": "Vipers",
+          "w": 6,
+          "l": 7,
+          "t": 0,
+          "winPct": 0.462,
+          "seed": 3,
+          "seedShared": false,
+          "finalRank": 5,
+          "teamCount": 6,
+          "playoffSpots": 6,
+          "madePlayoffs": true,
+          "seedVsFinish": -2,
+          "placementPct": 0.2
+        },
         {
           "year": 2013,
           "team": "swaggy mc swag",
@@ -2410,14 +2650,14 @@
           "placementPct": 0.364
         }
       ],
-      "firstYear": 2013,
+      "firstYear": 2012,
       "lastYear": 2014,
-      "seasonCount": 2,
-      "w": 8,
-      "l": 18,
+      "seasonCount": 3,
+      "w": 14,
+      "l": 25,
       "t": 0,
-      "games": 26,
-      "winPct": 0.308,
+      "games": 39,
+      "winPct": 0.359,
       "championships": 0,
       "runnerUps": 0,
       "thirdPlace": 0,
@@ -2425,22 +2665,39 @@
       "finalsAppearances": 0,
       "titleRate": null,
       "titleYears": [],
-      "playoffAppearances": 1,
-      "playoffRate": 0.5,
-      "avgFinish": 9,
-      "avgFinishPct": 0.182,
-      "bestFinish": 8,
-      "seedVsFinish": -1,
-      "seedVsFinishSeasons": 1
+      "playoffAppearances": 2,
+      "playoffRate": 0.667,
+      "avgFinish": 7.67,
+      "avgFinishPct": 0.188,
+      "bestFinish": 5,
+      "seedVsFinish": -1.5,
+      "seedVsFinishSeasons": 2
     },
     {
-      "id": "hernandez-hitmen",
-      "name": "Hernandez' Hitmen",
-      "identified": false,
+      "id": "chase",
+      "name": "Chase",
+      "identified": true,
       "teamNames": [
+        "LeGarrette ON MY LEVEL",
         "Hernandez' Hitmen"
       ],
       "seasons": [
+        {
+          "year": 2015,
+          "team": "LeGarrette ON MY LEVEL",
+          "w": 4,
+          "l": 9,
+          "t": 0,
+          "winPct": 0.308,
+          "seed": 12,
+          "seedShared": false,
+          "finalRank": 13,
+          "teamCount": 14,
+          "playoffSpots": 8,
+          "madePlayoffs": false,
+          "seedVsFinish": null,
+          "placementPct": 0.077
+        },
         {
           "year": 2016,
           "team": "Hernandez' Hitmen",
@@ -2474,14 +2731,14 @@
           "placementPct": 0.273
         }
       ],
-      "firstYear": 2016,
+      "firstYear": 2015,
       "lastYear": 2017,
-      "seasonCount": 2,
-      "w": 10,
-      "l": 16,
+      "seasonCount": 3,
+      "w": 14,
+      "l": 25,
       "t": 0,
-      "games": 26,
-      "winPct": 0.385,
+      "games": 39,
+      "winPct": 0.359,
       "championships": 0,
       "runnerUps": 0,
       "thirdPlace": 0,
@@ -2490,21 +2747,89 @@
       "titleRate": null,
       "titleYears": [],
       "playoffAppearances": 1,
-      "playoffRate": 0.5,
-      "avgFinish": 8,
-      "avgFinishPct": 0.364,
+      "playoffRate": 0.333,
+      "avgFinish": 9.67,
+      "avgFinishPct": 0.268,
       "bestFinish": 7,
       "seedVsFinish": 0,
       "seedVsFinishSeasons": 1
     },
     {
-      "id": "unleash-the-beasley",
-      "name": "UNLEASH THE BEASLEY",
-      "identified": false,
+      "id": "will",
+      "name": "Will",
+      "identified": true,
       "teamNames": [
+        "Milton Mustangs",
+        "THE BIG MAN ON CAMPUS",
+        "CAMBRIDGE BOY",
+        "HIGHLIGHT REEL",
         "UNLEASH THE BEASLEY"
       ],
       "seasons": [
+        {
+          "year": 2012,
+          "team": "Milton Mustangs",
+          "w": 10,
+          "l": 3,
+          "t": 0,
+          "winPct": 0.769,
+          "seed": 1,
+          "seedShared": true,
+          "finalRank": 3,
+          "teamCount": 6,
+          "playoffSpots": 6,
+          "madePlayoffs": true,
+          "seedVsFinish": -2,
+          "placementPct": 0.6
+        },
+        {
+          "year": 2013,
+          "team": "THE BIG MAN ON CAMPUS",
+          "w": 7,
+          "l": 6,
+          "t": 0,
+          "winPct": 0.538,
+          "seed": 5,
+          "seedShared": true,
+          "finalRank": 7,
+          "teamCount": 10,
+          "playoffSpots": 6,
+          "madePlayoffs": false,
+          "seedVsFinish": null,
+          "placementPct": 0.333
+        },
+        {
+          "year": 2014,
+          "team": "CAMBRIDGE BOY",
+          "w": 2,
+          "l": 11,
+          "t": 0,
+          "winPct": 0.154,
+          "seed": 10,
+          "seedShared": true,
+          "finalRank": 12,
+          "teamCount": 12,
+          "playoffSpots": 8,
+          "madePlayoffs": false,
+          "seedVsFinish": null,
+          "placementPct": 0
+        },
+        {
+          "year": 2015,
+          "team": "HIGHLIGHT REEL",
+          "w": 5,
+          "l": 8,
+          "t": 0,
+          "winPct": 0.385,
+          "seed": 11,
+          "seedShared": false,
+          "finalRank": 9,
+          "teamCount": 14,
+          "playoffSpots": 8,
+          "madePlayoffs": false,
+          "seedVsFinish": null,
+          "placementPct": 0.385
+        },
         {
           "year": 2016,
           "team": "UNLEASH THE BEASLEY",
@@ -2538,126 +2863,14 @@
           "placementPct": 0
         }
       ],
-      "firstYear": 2016,
-      "lastYear": 2017,
-      "seasonCount": 2,
-      "w": 10,
-      "l": 16,
-      "t": 0,
-      "games": 26,
-      "winPct": 0.385,
-      "championships": 0,
-      "runnerUps": 0,
-      "thirdPlace": 0,
-      "podiums": 0,
-      "finalsAppearances": 0,
-      "titleRate": null,
-      "titleYears": [],
-      "playoffAppearances": 1,
-      "playoffRate": 0.5,
-      "avgFinish": 10,
-      "avgFinishPct": 0.182,
-      "bestFinish": 8,
-      "seedVsFinish": -1,
-      "seedVsFinishSeasons": 1
-    },
-    {
-      "id": "rolling-with-mahomies",
-      "name": "Rolling With Mahomies",
-      "identified": false,
-      "teamNames": [
-        "Rolling With Mahomies"
-      ],
-      "seasons": [
-        {
-          "year": 2020,
-          "team": "Rolling With Mahomies",
-          "w": 9,
-          "l": 4,
-          "t": 0,
-          "winPct": 0.692,
-          "seed": 2,
-          "seedShared": false,
-          "finalRank": 2,
-          "teamCount": 10,
-          "playoffSpots": 6,
-          "madePlayoffs": true,
-          "seedVsFinish": 0,
-          "placementPct": 0.889
-        },
-        {
-          "year": 2021,
-          "team": "Rolling With Mahomies",
-          "w": 3,
-          "l": 11,
-          "t": 0,
-          "winPct": 0.214,
-          "seed": 9,
-          "seedShared": true,
-          "finalRank": 9,
-          "teamCount": 10,
-          "playoffSpots": 6,
-          "madePlayoffs": false,
-          "seedVsFinish": null,
-          "placementPct": 0.111
-        }
-      ],
-      "firstYear": 2020,
-      "lastYear": 2021,
-      "seasonCount": 2,
-      "w": 12,
-      "l": 15,
-      "t": 0,
-      "games": 27,
-      "winPct": 0.444,
-      "championships": 0,
-      "runnerUps": 1,
-      "thirdPlace": 0,
-      "podiums": 1,
-      "finalsAppearances": 1,
-      "titleRate": 0,
-      "titleYears": [],
-      "playoffAppearances": 1,
-      "playoffRate": 0.5,
-      "avgFinish": 5.5,
-      "avgFinishPct": 0.5,
-      "bestFinish": 2,
-      "seedVsFinish": 0,
-      "seedVsFinishSeasons": 1
-    },
-    {
-      "id": "milton-mustangs",
-      "name": "Milton Mustangs",
-      "identified": false,
-      "teamNames": [
-        "Milton Mustangs"
-      ],
-      "seasons": [
-        {
-          "year": 2012,
-          "team": "Milton Mustangs",
-          "w": 10,
-          "l": 3,
-          "t": 0,
-          "winPct": 0.769,
-          "seed": 1,
-          "seedShared": true,
-          "finalRank": 3,
-          "teamCount": 6,
-          "playoffSpots": 4,
-          "madePlayoffs": true,
-          "seedVsFinish": -2,
-          "placementPct": 0.6
-        }
-      ],
       "firstYear": 2012,
-      "lastYear": 2012,
-      "seasonCount": 1,
-      "w": 10,
-      "l": 3,
+      "lastYear": 2017,
+      "seasonCount": 6,
+      "w": 34,
+      "l": 44,
       "t": 0,
-      "games": 13,
-      "winPct": 0.769,
+      "games": 78,
+      "winPct": 0.436,
       "championships": 0,
       "runnerUps": 0,
       "thirdPlace": 1,
@@ -2665,210 +2878,18 @@
       "finalsAppearances": 0,
       "titleRate": null,
       "titleYears": [],
-      "playoffAppearances": 1,
-      "playoffRate": 1,
-      "avgFinish": 3,
-      "avgFinishPct": 0.6,
+      "playoffAppearances": 2,
+      "playoffRate": 0.333,
+      "avgFinish": 8.5,
+      "avgFinishPct": 0.28,
       "bestFinish": 3,
-      "seedVsFinish": -2,
-      "seedVsFinishSeasons": 1
+      "seedVsFinish": -1.5,
+      "seedVsFinishSeasons": 2
     },
     {
-      "id": "the-christian-wolverines",
-      "name": "The Christian Wolverines",
-      "identified": false,
-      "teamNames": [
-        "The Christian Wolverines"
-      ],
-      "seasons": [
-        {
-          "year": 2012,
-          "team": "The Christian Wolverines",
-          "w": 5,
-          "l": 8,
-          "t": 0,
-          "winPct": 0.385,
-          "seed": 4,
-          "seedShared": true,
-          "finalRank": 4,
-          "teamCount": 6,
-          "playoffSpots": 4,
-          "madePlayoffs": true,
-          "seedVsFinish": 0,
-          "placementPct": 0.4
-        }
-      ],
-      "firstYear": 2012,
-      "lastYear": 2012,
-      "seasonCount": 1,
-      "w": 5,
-      "l": 8,
-      "t": 0,
-      "games": 13,
-      "winPct": 0.385,
-      "championships": 0,
-      "runnerUps": 0,
-      "thirdPlace": 0,
-      "podiums": 0,
-      "finalsAppearances": 0,
-      "titleRate": null,
-      "titleYears": [],
-      "playoffAppearances": 1,
-      "playoffRate": 1,
-      "avgFinish": 4,
-      "avgFinishPct": 0.4,
-      "bestFinish": 4,
-      "seedVsFinish": 0,
-      "seedVsFinishSeasons": 1
-    },
-    {
-      "id": "the-fighting-irish",
-      "name": "THE FIGHTING IRISH",
-      "identified": false,
-      "teamNames": [
-        "THE FIGHTING IRISH"
-      ],
-      "seasons": [
-        {
-          "year": 2012,
-          "team": "THE FIGHTING IRISH",
-          "w": 3,
-          "l": 10,
-          "t": 0,
-          "winPct": 0.231,
-          "seed": 6,
-          "seedShared": false,
-          "finalRank": 2,
-          "teamCount": 6,
-          "playoffSpots": 4,
-          "madePlayoffs": true,
-          "seedVsFinish": 4,
-          "placementPct": 0.8
-        }
-      ],
-      "firstYear": 2012,
-      "lastYear": 2012,
-      "seasonCount": 1,
-      "w": 3,
-      "l": 10,
-      "t": 0,
-      "games": 13,
-      "winPct": 0.231,
-      "championships": 0,
-      "runnerUps": 1,
-      "thirdPlace": 0,
-      "podiums": 1,
-      "finalsAppearances": 1,
-      "titleRate": 0,
-      "titleYears": [],
-      "playoffAppearances": 1,
-      "playoffRate": 1,
-      "avgFinish": 2,
-      "avgFinishPct": 0.8,
-      "bestFinish": 2,
-      "seedVsFinish": 4,
-      "seedVsFinishSeasons": 1
-    },
-    {
-      "id": "vipers",
-      "name": "Vipers",
-      "identified": false,
-      "teamNames": [
-        "Vipers"
-      ],
-      "seasons": [
-        {
-          "year": 2012,
-          "team": "Vipers",
-          "w": 6,
-          "l": 7,
-          "t": 0,
-          "winPct": 0.462,
-          "seed": 3,
-          "seedShared": false,
-          "finalRank": 5,
-          "teamCount": 6,
-          "playoffSpots": 4,
-          "madePlayoffs": false,
-          "seedVsFinish": null,
-          "placementPct": 0.2
-        }
-      ],
-      "firstYear": 2012,
-      "lastYear": 2012,
-      "seasonCount": 1,
-      "w": 6,
-      "l": 7,
-      "t": 0,
-      "games": 13,
-      "winPct": 0.462,
-      "championships": 0,
-      "runnerUps": 0,
-      "thirdPlace": 0,
-      "podiums": 0,
-      "finalsAppearances": 0,
-      "titleRate": null,
-      "titleYears": [],
-      "playoffAppearances": 0,
-      "playoffRate": 0,
-      "avgFinish": 5,
-      "avgFinishPct": 0.2,
-      "bestFinish": 5,
-      "seedVsFinish": null,
-      "seedVsFinishSeasons": 0
-    },
-    {
-      "id": "coles-2nd-team",
-      "name": "Coles 2nd Team",
-      "identified": false,
-      "teamNames": [
-        "Coles 2nd Team"
-      ],
-      "seasons": [
-        {
-          "year": 2013,
-          "team": "Coles 2nd Team",
-          "w": 3,
-          "l": 10,
-          "t": 0,
-          "winPct": 0.231,
-          "seed": 9,
-          "seedShared": true,
-          "finalRank": 9,
-          "teamCount": 10,
-          "playoffSpots": 6,
-          "madePlayoffs": false,
-          "seedVsFinish": null,
-          "placementPct": 0.111
-        }
-      ],
-      "firstYear": 2013,
-      "lastYear": 2013,
-      "seasonCount": 1,
-      "w": 3,
-      "l": 10,
-      "t": 0,
-      "games": 13,
-      "winPct": 0.231,
-      "championships": 0,
-      "runnerUps": 0,
-      "thirdPlace": 0,
-      "podiums": 0,
-      "finalsAppearances": 0,
-      "titleRate": null,
-      "titleYears": [],
-      "playoffAppearances": 0,
-      "playoffRate": 0,
-      "avgFinish": 9,
-      "avgFinishPct": 0.111,
-      "bestFinish": 9,
-      "seedVsFinish": null,
-      "seedVsFinishSeasons": 0
-    },
-    {
-      "id": "i-mgonnawhipmichael",
-      "name": "I'mGonnaWhipMichael",
-      "identified": false,
+      "id": "john",
+      "name": "John",
+      "identified": true,
       "teamNames": [
         "I'mGonnaWhipMichael"
       ],
@@ -2914,249 +2935,9 @@
       "seedVsFinishSeasons": 0
     },
     {
-      "id": "stop-look-and-lose",
-      "name": "Stop Look and Lose",
-      "identified": false,
-      "teamNames": [
-        "Stop Look and Lose"
-      ],
-      "seasons": [
-        {
-          "year": 2013,
-          "team": "Stop Look and Lose",
-          "w": 4,
-          "l": 9,
-          "t": 0,
-          "winPct": 0.308,
-          "seed": 7,
-          "seedShared": true,
-          "finalRank": 2,
-          "teamCount": 10,
-          "playoffSpots": 6,
-          "madePlayoffs": true,
-          "seedVsFinish": 5,
-          "placementPct": 0.889
-        }
-      ],
-      "firstYear": 2013,
-      "lastYear": 2013,
-      "seasonCount": 1,
-      "w": 4,
-      "l": 9,
-      "t": 0,
-      "games": 13,
-      "winPct": 0.308,
-      "championships": 0,
-      "runnerUps": 1,
-      "thirdPlace": 0,
-      "podiums": 1,
-      "finalsAppearances": 1,
-      "titleRate": 0,
-      "titleYears": [],
-      "playoffAppearances": 1,
-      "playoffRate": 1,
-      "avgFinish": 2,
-      "avgFinishPct": 0.889,
-      "bestFinish": 2,
-      "seedVsFinish": 5,
-      "seedVsFinishSeasons": 1
-    },
-    {
-      "id": "the-big-man-on-campus",
-      "name": "THE BIG MAN ON CAMPUS",
-      "identified": false,
-      "teamNames": [
-        "THE BIG MAN ON CAMPUS"
-      ],
-      "seasons": [
-        {
-          "year": 2013,
-          "team": "THE BIG MAN ON CAMPUS",
-          "w": 7,
-          "l": 6,
-          "t": 0,
-          "winPct": 0.538,
-          "seed": 5,
-          "seedShared": true,
-          "finalRank": 7,
-          "teamCount": 10,
-          "playoffSpots": 6,
-          "madePlayoffs": false,
-          "seedVsFinish": null,
-          "placementPct": 0.333
-        }
-      ],
-      "firstYear": 2013,
-      "lastYear": 2013,
-      "seasonCount": 1,
-      "w": 7,
-      "l": 6,
-      "t": 0,
-      "games": 13,
-      "winPct": 0.538,
-      "championships": 0,
-      "runnerUps": 0,
-      "thirdPlace": 0,
-      "podiums": 0,
-      "finalsAppearances": 0,
-      "titleRate": null,
-      "titleYears": [],
-      "playoffAppearances": 0,
-      "playoffRate": 0,
-      "avgFinish": 7,
-      "avgFinishPct": 0.333,
-      "bestFinish": 7,
-      "seedVsFinish": null,
-      "seedVsFinishSeasons": 0
-    },
-    {
-      "id": "the-guy-who-picked-up-foster",
-      "name": "THE GUY WHO PICKED UP FOSTER",
-      "identified": false,
-      "teamNames": [
-        "THE GUY WHO PICKED UP FOSTER"
-      ],
-      "seasons": [
-        {
-          "year": 2013,
-          "team": "THE GUY WHO PICKED UP FOSTER",
-          "w": 9,
-          "l": 4,
-          "t": 0,
-          "winPct": 0.692,
-          "seed": 3,
-          "seedShared": false,
-          "finalRank": 3,
-          "teamCount": 10,
-          "playoffSpots": 6,
-          "madePlayoffs": true,
-          "seedVsFinish": 0,
-          "placementPct": 0.778
-        }
-      ],
-      "firstYear": 2013,
-      "lastYear": 2013,
-      "seasonCount": 1,
-      "w": 9,
-      "l": 4,
-      "t": 0,
-      "games": 13,
-      "winPct": 0.692,
-      "championships": 0,
-      "runnerUps": 0,
-      "thirdPlace": 1,
-      "podiums": 1,
-      "finalsAppearances": 0,
-      "titleRate": null,
-      "titleYears": [],
-      "playoffAppearances": 1,
-      "playoffRate": 1,
-      "avgFinish": 3,
-      "avgFinishPct": 0.778,
-      "bestFinish": 3,
-      "seedVsFinish": 0,
-      "seedVsFinishSeasons": 1
-    },
-    {
-      "id": "bulldogs",
-      "name": "BULLDOGS",
-      "identified": false,
-      "teamNames": [
-        "BULLDOGS"
-      ],
-      "seasons": [
-        {
-          "year": 2014,
-          "team": "BULLDOGS",
-          "w": 7,
-          "l": 6,
-          "t": 0,
-          "winPct": 0.538,
-          "seed": 5,
-          "seedShared": true,
-          "finalRank": 6,
-          "teamCount": 12,
-          "playoffSpots": 8,
-          "madePlayoffs": true,
-          "seedVsFinish": -1,
-          "placementPct": 0.545
-        }
-      ],
-      "firstYear": 2014,
-      "lastYear": 2014,
-      "seasonCount": 1,
-      "w": 7,
-      "l": 6,
-      "t": 0,
-      "games": 13,
-      "winPct": 0.538,
-      "championships": 0,
-      "runnerUps": 0,
-      "thirdPlace": 0,
-      "podiums": 0,
-      "finalsAppearances": 0,
-      "titleRate": null,
-      "titleYears": [],
-      "playoffAppearances": 1,
-      "playoffRate": 1,
-      "avgFinish": 6,
-      "avgFinishPct": 0.545,
-      "bestFinish": 6,
-      "seedVsFinish": -1,
-      "seedVsFinishSeasons": 1
-    },
-    {
-      "id": "cambridge-boy",
-      "name": "CAMBRIDGE BOY",
-      "identified": false,
-      "teamNames": [
-        "CAMBRIDGE BOY"
-      ],
-      "seasons": [
-        {
-          "year": 2014,
-          "team": "CAMBRIDGE BOY",
-          "w": 2,
-          "l": 11,
-          "t": 0,
-          "winPct": 0.154,
-          "seed": 10,
-          "seedShared": true,
-          "finalRank": 12,
-          "teamCount": 12,
-          "playoffSpots": 8,
-          "madePlayoffs": false,
-          "seedVsFinish": null,
-          "placementPct": 0
-        }
-      ],
-      "firstYear": 2014,
-      "lastYear": 2014,
-      "seasonCount": 1,
-      "w": 2,
-      "l": 11,
-      "t": 0,
-      "games": 13,
-      "winPct": 0.154,
-      "championships": 0,
-      "runnerUps": 0,
-      "thirdPlace": 0,
-      "podiums": 0,
-      "finalsAppearances": 0,
-      "titleRate": null,
-      "titleYears": [],
-      "playoffAppearances": 0,
-      "playoffRate": 0,
-      "avgFinish": 12,
-      "avgFinishPct": 0,
-      "bestFinish": 12,
-      "seedVsFinish": null,
-      "seedVsFinishSeasons": 0
-    },
-    {
-      "id": "the-fast-and-the-julio",
-      "name": "The fast and the Julio",
-      "identified": false,
+      "id": "phil",
+      "name": "Phil",
+      "identified": true,
       "teamNames": [
         "The fast and the Julio"
       ],
@@ -3202,57 +2983,9 @@
       "seedVsFinishSeasons": 1
     },
     {
-      "id": "the-surf-bros",
-      "name": "THE SURF BROS",
-      "identified": false,
-      "teamNames": [
-        "THE SURF BROS"
-      ],
-      "seasons": [
-        {
-          "year": 2014,
-          "team": "THE SURF BROS",
-          "w": 7,
-          "l": 6,
-          "t": 0,
-          "winPct": 0.538,
-          "seed": 5,
-          "seedShared": true,
-          "finalRank": 3,
-          "teamCount": 12,
-          "playoffSpots": 8,
-          "madePlayoffs": true,
-          "seedVsFinish": 2,
-          "placementPct": 0.818
-        }
-      ],
-      "firstYear": 2014,
-      "lastYear": 2014,
-      "seasonCount": 1,
-      "w": 7,
-      "l": 6,
-      "t": 0,
-      "games": 13,
-      "winPct": 0.538,
-      "championships": 0,
-      "runnerUps": 0,
-      "thirdPlace": 1,
-      "podiums": 1,
-      "finalsAppearances": 0,
-      "titleRate": null,
-      "titleYears": [],
-      "playoffAppearances": 1,
-      "playoffRate": 1,
-      "avgFinish": 3,
-      "avgFinishPct": 0.818,
-      "bestFinish": 3,
-      "seedVsFinish": 2,
-      "seedVsFinishSeasons": 1
-    },
-    {
-      "id": "2legit2quit",
-      "name": "2legit2quit",
-      "identified": false,
+      "id": "ds",
+      "name": "DS",
+      "identified": true,
       "teamNames": [
         "2legit2quit"
       ],
@@ -3296,486 +3029,6 @@
       "bestFinish": 10,
       "seedVsFinish": null,
       "seedVsFinishSeasons": 0
-    },
-    {
-      "id": "geno-s-jawdroppers",
-      "name": "Geno's Jawdroppers",
-      "identified": false,
-      "teamNames": [
-        "Geno's Jawdroppers"
-      ],
-      "seasons": [
-        {
-          "year": 2015,
-          "team": "Geno's Jawdroppers",
-          "w": 8,
-          "l": 5,
-          "t": 0,
-          "winPct": 0.615,
-          "seed": 2,
-          "seedShared": true,
-          "finalRank": 5,
-          "teamCount": 14,
-          "playoffSpots": 8,
-          "madePlayoffs": true,
-          "seedVsFinish": -3,
-          "placementPct": 0.692
-        }
-      ],
-      "firstYear": 2015,
-      "lastYear": 2015,
-      "seasonCount": 1,
-      "w": 8,
-      "l": 5,
-      "t": 0,
-      "games": 13,
-      "winPct": 0.615,
-      "championships": 0,
-      "runnerUps": 0,
-      "thirdPlace": 0,
-      "podiums": 0,
-      "finalsAppearances": 0,
-      "titleRate": null,
-      "titleYears": [],
-      "playoffAppearances": 1,
-      "playoffRate": 1,
-      "avgFinish": 5,
-      "avgFinishPct": 0.692,
-      "bestFinish": 5,
-      "seedVsFinish": -3,
-      "seedVsFinishSeasons": 1
-    },
-    {
-      "id": "go-cart-mozart",
-      "name": "GO CART MOZART",
-      "identified": false,
-      "teamNames": [
-        "GO CART MOZART"
-      ],
-      "seasons": [
-        {
-          "year": 2015,
-          "team": "GO CART MOZART",
-          "w": 0,
-          "l": 13,
-          "t": 0,
-          "winPct": 0,
-          "seed": 14,
-          "seedShared": false,
-          "finalRank": 14,
-          "teamCount": 14,
-          "playoffSpots": 8,
-          "madePlayoffs": false,
-          "seedVsFinish": null,
-          "placementPct": 0
-        }
-      ],
-      "firstYear": 2015,
-      "lastYear": 2015,
-      "seasonCount": 1,
-      "w": 0,
-      "l": 13,
-      "t": 0,
-      "games": 13,
-      "winPct": 0,
-      "championships": 0,
-      "runnerUps": 0,
-      "thirdPlace": 0,
-      "podiums": 0,
-      "finalsAppearances": 0,
-      "titleRate": null,
-      "titleYears": [],
-      "playoffAppearances": 0,
-      "playoffRate": 0,
-      "avgFinish": 14,
-      "avgFinishPct": 0,
-      "bestFinish": 14,
-      "seedVsFinish": null,
-      "seedVsFinishSeasons": 0
-    },
-    {
-      "id": "highlight-reel",
-      "name": "HIGHLIGHT REEL",
-      "identified": false,
-      "teamNames": [
-        "HIGHLIGHT REEL"
-      ],
-      "seasons": [
-        {
-          "year": 2015,
-          "team": "HIGHLIGHT REEL",
-          "w": 5,
-          "l": 8,
-          "t": 0,
-          "winPct": 0.385,
-          "seed": 11,
-          "seedShared": false,
-          "finalRank": 9,
-          "teamCount": 14,
-          "playoffSpots": 8,
-          "madePlayoffs": false,
-          "seedVsFinish": null,
-          "placementPct": 0.385
-        }
-      ],
-      "firstYear": 2015,
-      "lastYear": 2015,
-      "seasonCount": 1,
-      "w": 5,
-      "l": 8,
-      "t": 0,
-      "games": 13,
-      "winPct": 0.385,
-      "championships": 0,
-      "runnerUps": 0,
-      "thirdPlace": 0,
-      "podiums": 0,
-      "finalsAppearances": 0,
-      "titleRate": null,
-      "titleYears": [],
-      "playoffAppearances": 0,
-      "playoffRate": 0,
-      "avgFinish": 9,
-      "avgFinishPct": 0.385,
-      "bestFinish": 9,
-      "seedVsFinish": null,
-      "seedVsFinishSeasons": 0
-    },
-    {
-      "id": "legarrette-on-my-level",
-      "name": "LeGarrette ON MY LEVEL",
-      "identified": false,
-      "teamNames": [
-        "LeGarrette ON MY LEVEL"
-      ],
-      "seasons": [
-        {
-          "year": 2015,
-          "team": "LeGarrette ON MY LEVEL",
-          "w": 4,
-          "l": 9,
-          "t": 0,
-          "winPct": 0.308,
-          "seed": 12,
-          "seedShared": false,
-          "finalRank": 13,
-          "teamCount": 14,
-          "playoffSpots": 8,
-          "madePlayoffs": false,
-          "seedVsFinish": null,
-          "placementPct": 0.077
-        }
-      ],
-      "firstYear": 2015,
-      "lastYear": 2015,
-      "seasonCount": 1,
-      "w": 4,
-      "l": 9,
-      "t": 0,
-      "games": 13,
-      "winPct": 0.308,
-      "championships": 0,
-      "runnerUps": 0,
-      "thirdPlace": 0,
-      "podiums": 0,
-      "finalsAppearances": 0,
-      "titleRate": null,
-      "titleYears": [],
-      "playoffAppearances": 0,
-      "playoffRate": 0,
-      "avgFinish": 13,
-      "avgFinishPct": 0.077,
-      "bestFinish": 13,
-      "seedVsFinish": null,
-      "seedVsFinishSeasons": 0
-    },
-    {
-      "id": "injuries-suck",
-      "name": "Injuries Suck",
-      "identified": false,
-      "teamNames": [
-        "Injuries Suck"
-      ],
-      "seasons": [
-        {
-          "year": 2016,
-          "team": "Injuries Suck",
-          "w": 2,
-          "l": 11,
-          "t": 0,
-          "winPct": 0.154,
-          "seed": 12,
-          "seedShared": false,
-          "finalRank": 11,
-          "teamCount": 12,
-          "playoffSpots": 8,
-          "madePlayoffs": false,
-          "seedVsFinish": null,
-          "placementPct": 0.091
-        }
-      ],
-      "firstYear": 2016,
-      "lastYear": 2016,
-      "seasonCount": 1,
-      "w": 2,
-      "l": 11,
-      "t": 0,
-      "games": 13,
-      "winPct": 0.154,
-      "championships": 0,
-      "runnerUps": 0,
-      "thirdPlace": 0,
-      "podiums": 0,
-      "finalsAppearances": 0,
-      "titleRate": null,
-      "titleYears": [],
-      "playoffAppearances": 0,
-      "playoffRate": 0,
-      "avgFinish": 11,
-      "avgFinishPct": 0.091,
-      "bestFinish": 11,
-      "seedVsFinish": null,
-      "seedVsFinishSeasons": 0
-    },
-    {
-      "id": "28-3",
-      "name": "28-3",
-      "identified": false,
-      "teamNames": [
-        "28-3"
-      ],
-      "seasons": [
-        {
-          "year": 2017,
-          "team": "28-3",
-          "w": 6,
-          "l": 7,
-          "t": 0,
-          "winPct": 0.462,
-          "seed": 7,
-          "seedShared": false,
-          "finalRank": 8,
-          "teamCount": 12,
-          "playoffSpots": 8,
-          "madePlayoffs": true,
-          "seedVsFinish": -1,
-          "placementPct": 0.364
-        }
-      ],
-      "firstYear": 2017,
-      "lastYear": 2017,
-      "seasonCount": 1,
-      "w": 6,
-      "l": 7,
-      "t": 0,
-      "games": 13,
-      "winPct": 0.462,
-      "championships": 0,
-      "runnerUps": 0,
-      "thirdPlace": 0,
-      "podiums": 0,
-      "finalsAppearances": 0,
-      "titleRate": null,
-      "titleYears": [],
-      "playoffAppearances": 1,
-      "playoffRate": 1,
-      "avgFinish": 8,
-      "avgFinishPct": 0.364,
-      "bestFinish": 8,
-      "seedVsFinish": -1,
-      "seedVsFinishSeasons": 1
-    },
-    {
-      "id": "why-me",
-      "name": "Why Me",
-      "identified": false,
-      "teamNames": [
-        "Why Me"
-      ],
-      "seasons": [
-        {
-          "year": 2017,
-          "team": "Why Me",
-          "w": 4,
-          "l": 9,
-          "t": 0,
-          "winPct": 0.308,
-          "seed": 9,
-          "seedShared": true,
-          "finalRank": 11,
-          "teamCount": 12,
-          "playoffSpots": 8,
-          "madePlayoffs": false,
-          "seedVsFinish": null,
-          "placementPct": 0.091
-        }
-      ],
-      "firstYear": 2017,
-      "lastYear": 2017,
-      "seasonCount": 1,
-      "w": 4,
-      "l": 9,
-      "t": 0,
-      "games": 13,
-      "winPct": 0.308,
-      "championships": 0,
-      "runnerUps": 0,
-      "thirdPlace": 0,
-      "podiums": 0,
-      "finalsAppearances": 0,
-      "titleRate": null,
-      "titleYears": [],
-      "playoffAppearances": 0,
-      "playoffRate": 0,
-      "avgFinish": 11,
-      "avgFinishPct": 0.091,
-      "bestFinish": 11,
-      "seedVsFinish": null,
-      "seedVsFinishSeasons": 0
-    },
-    {
-      "id": "dak-to-the-future",
-      "name": "Dak to the future",
-      "identified": false,
-      "teamNames": [
-        "Dak to the future"
-      ],
-      "seasons": [
-        {
-          "year": 2019,
-          "team": "Dak to the future",
-          "w": 3,
-          "l": 10,
-          "t": 0,
-          "winPct": 0.231,
-          "seed": 9,
-          "seedShared": true,
-          "finalRank": 10,
-          "teamCount": 10,
-          "playoffSpots": 6,
-          "madePlayoffs": false,
-          "seedVsFinish": null,
-          "placementPct": 0
-        }
-      ],
-      "firstYear": 2019,
-      "lastYear": 2019,
-      "seasonCount": 1,
-      "w": 3,
-      "l": 10,
-      "t": 0,
-      "games": 13,
-      "winPct": 0.231,
-      "championships": 0,
-      "runnerUps": 0,
-      "thirdPlace": 0,
-      "podiums": 0,
-      "finalsAppearances": 0,
-      "titleRate": null,
-      "titleYears": [],
-      "playoffAppearances": 0,
-      "playoffRate": 0,
-      "avgFinish": 10,
-      "avgFinishPct": 0,
-      "bestFinish": 10,
-      "seedVsFinish": null,
-      "seedVsFinishSeasons": 0
-    },
-    {
-      "id": "goff-balls",
-      "name": "Goff Balls",
-      "identified": false,
-      "teamNames": [
-        "Goff Balls"
-      ],
-      "seasons": [
-        {
-          "year": 2019,
-          "team": "Goff Balls",
-          "w": 3,
-          "l": 10,
-          "t": 0,
-          "winPct": 0.231,
-          "seed": 9,
-          "seedShared": true,
-          "finalRank": 8,
-          "teamCount": 10,
-          "playoffSpots": 6,
-          "madePlayoffs": false,
-          "seedVsFinish": null,
-          "placementPct": 0.222
-        }
-      ],
-      "firstYear": 2019,
-      "lastYear": 2019,
-      "seasonCount": 1,
-      "w": 3,
-      "l": 10,
-      "t": 0,
-      "games": 13,
-      "winPct": 0.231,
-      "championships": 0,
-      "runnerUps": 0,
-      "thirdPlace": 0,
-      "podiums": 0,
-      "finalsAppearances": 0,
-      "titleRate": null,
-      "titleYears": [],
-      "playoffAppearances": 0,
-      "playoffRate": 0,
-      "avgFinish": 8,
-      "avgFinishPct": 0.222,
-      "bestFinish": 8,
-      "seedVsFinish": null,
-      "seedVsFinishSeasons": 0
-    },
-    {
-      "id": "the-2002-miami-hurricanes",
-      "name": "The 2002 Miami Hurricanes",
-      "identified": false,
-      "teamNames": [
-        "The 2002 Miami Hurricanes"
-      ],
-      "seasons": [
-        {
-          "year": 2021,
-          "team": "The 2002 Miami Hurricanes",
-          "w": 7,
-          "l": 7,
-          "t": 0,
-          "winPct": 0.5,
-          "seed": 5,
-          "seedShared": true,
-          "finalRank": 7,
-          "teamCount": 10,
-          "playoffSpots": 6,
-          "madePlayoffs": false,
-          "seedVsFinish": null,
-          "placementPct": 0.333
-        }
-      ],
-      "firstYear": 2021,
-      "lastYear": 2021,
-      "seasonCount": 1,
-      "w": 7,
-      "l": 7,
-      "t": 0,
-      "games": 14,
-      "winPct": 0.5,
-      "championships": 0,
-      "runnerUps": 0,
-      "thirdPlace": 0,
-      "podiums": 0,
-      "finalsAppearances": 0,
-      "titleRate": null,
-      "titleYears": [],
-      "playoffAppearances": 0,
-      "playoffRate": 0,
-      "avgFinish": 7,
-      "avgFinishPct": 0.333,
-      "bestFinish": 7,
-      "seedVsFinish": null,
-      "seedVsFinishSeasons": 0
     }
   ],
   "podium": [
@@ -3784,343 +3037,343 @@
       "place": 1,
       "team": "SCHMIDTY DUCK",
       "key": "schmidty duck",
-      "managerId": "schmidty-duck",
-      "managerName": "SCHMIDTY DUCK"
+      "managerId": "luke",
+      "managerName": "Luke"
     },
     {
       "year": 2025,
       "place": 2,
       "team": "The Elites",
       "key": "the elites",
-      "managerId": "the-elites",
-      "managerName": "The Elites"
+      "managerId": "eli",
+      "managerName": "Eli"
     },
     {
       "year": 2025,
       "place": 3,
       "team": "Le'Voen a prayer",
       "key": "le'voen a prayer",
-      "managerId": "le-voen-a-prayer",
-      "managerName": "Le'Voen a prayer"
+      "managerId": "caleb",
+      "managerName": "Caleb"
     },
     {
       "year": 2024,
       "place": 1,
       "team": "Le'Voen a prayer",
       "key": "le'voen a prayer",
-      "managerId": "le-voen-a-prayer",
-      "managerName": "Le'Voen a prayer"
+      "managerId": "caleb",
+      "managerName": "Caleb"
     },
     {
       "year": 2024,
       "place": 2,
       "team": "Turn Down For Watt",
       "key": "turn down for watt",
-      "managerId": "turn-down-for-watt",
-      "managerName": "Turn Down For Watt"
+      "managerId": "lansden",
+      "managerName": "Lansden"
     },
     {
       "year": 2024,
       "place": 3,
       "team": "flaccoroni and cheese",
       "key": "flaccoroni and cheese",
-      "managerId": "flaccoroni-and-cheese",
-      "managerName": "flaccoroni and cheese"
+      "managerId": "michael",
+      "managerName": "Michael"
     },
     {
       "year": 2023,
       "place": 1,
       "team": "da winning team",
       "key": "da winning team",
-      "managerId": "da-winning-team",
-      "managerName": "da winning team"
+      "managerId": "finn",
+      "managerName": "Finn"
     },
     {
       "year": 2023,
       "place": 2,
       "team": "Vick's houndogs",
       "key": "vick's houndogs",
-      "managerId": "vick-s-houndogs",
-      "managerName": "Vick's houndogs"
+      "managerId": "nathan",
+      "managerName": "Nathan"
     },
     {
       "year": 2023,
       "place": 3,
       "team": "Le'Voen a prayer",
       "key": "le'voen a prayer",
-      "managerId": "le-voen-a-prayer",
-      "managerName": "Le'Voen a prayer"
+      "managerId": "caleb",
+      "managerName": "Caleb"
     },
     {
       "year": 2022,
       "place": 1,
       "team": "Turn Down For Watt",
       "key": "turn down for watt",
-      "managerId": "turn-down-for-watt",
-      "managerName": "Turn Down For Watt"
+      "managerId": "lansden",
+      "managerName": "Lansden"
     },
     {
       "year": 2022,
       "place": 2,
       "team": "SCHMIDTY DUCK",
       "key": "schmidty duck",
-      "managerId": "schmidty-duck",
-      "managerName": "SCHMIDTY DUCK"
+      "managerId": "luke",
+      "managerName": "Luke"
     },
     {
       "year": 2022,
       "place": 3,
       "team": "Go Kart Mozart",
       "key": "go kart mozart",
-      "managerId": "go-kart-mozart",
-      "managerName": "Go Kart Mozart"
+      "managerId": "moose",
+      "managerName": "Moose"
     },
     {
       "year": 2021,
       "place": 1,
       "team": "Le'Voen a prayer",
       "key": "le'voen a prayer",
-      "managerId": "le-voen-a-prayer",
-      "managerName": "Le'Voen a prayer"
+      "managerId": "caleb",
+      "managerName": "Caleb"
     },
     {
       "year": 2021,
       "place": 2,
       "team": "The Elites",
       "key": "the elites",
-      "managerId": "the-elites",
-      "managerName": "The Elites"
+      "managerId": "eli",
+      "managerName": "Eli"
     },
     {
       "year": 2021,
       "place": 3,
       "team": "Vick's houndogs",
       "key": "vick's houndogs",
-      "managerId": "vick-s-houndogs",
-      "managerName": "Vick's houndogs"
+      "managerId": "nathan",
+      "managerName": "Nathan"
     },
     {
       "year": 2020,
       "place": 1,
       "team": "Le'Voen a prayer",
       "key": "le'voen a prayer",
-      "managerId": "le-voen-a-prayer",
-      "managerName": "Le'Voen a prayer"
+      "managerId": "caleb",
+      "managerName": "Caleb"
     },
     {
       "year": 2020,
       "place": 2,
       "team": "Rolling With Mahomies",
       "key": "rolling with mahomies",
-      "managerId": "rolling-with-mahomies",
-      "managerName": "Rolling With Mahomies"
+      "managerId": "evan",
+      "managerName": "Evan"
     },
     {
       "year": 2020,
       "place": 3,
       "team": "the miracle workers",
       "key": "the miracle workers",
-      "managerId": "the-miracle-workers",
-      "managerName": "the miracle workers"
+      "managerId": "brady",
+      "managerName": "Brady"
     },
     {
       "year": 2019,
       "place": 1,
       "team": "da winning team",
       "key": "da winning team",
-      "managerId": "da-winning-team",
-      "managerName": "da winning team"
+      "managerId": "finn",
+      "managerName": "Finn"
     },
     {
       "year": 2019,
       "place": 2,
       "team": "flaccoroni and cheese",
       "key": "flaccoroni and cheese",
-      "managerId": "flaccoroni-and-cheese",
-      "managerName": "flaccoroni and cheese"
+      "managerId": "michael",
+      "managerName": "Michael"
     },
     {
       "year": 2019,
       "place": 3,
       "team": "Le'Voen a prayer",
       "key": "le'voen a prayer",
-      "managerId": "le-voen-a-prayer",
-      "managerName": "Le'Voen a prayer"
+      "managerId": "caleb",
+      "managerName": "Caleb"
     },
     {
       "year": 2018,
       "place": 1,
       "team": "The Highlanders",
       "key": "the highlanders",
-      "managerId": "the-highlanders",
-      "managerName": "The Highlanders"
+      "managerId": "evan",
+      "managerName": "Evan"
     },
     {
       "year": 2018,
       "place": 2,
       "team": "flaccoroni and cheese",
       "key": "flaccoroni and cheese",
-      "managerId": "flaccoroni-and-cheese",
-      "managerName": "flaccoroni and cheese"
+      "managerId": "michael",
+      "managerName": "Michael"
     },
     {
       "year": 2018,
       "place": 3,
       "team": "Beats by Ray",
       "key": "beats by ray",
-      "managerId": "beats-by-ray",
-      "managerName": "Beats by Ray"
+      "managerId": "luke",
+      "managerName": "Luke"
     },
     {
       "year": 2017,
       "place": 1,
       "team": "The Elites",
       "key": "the elites",
-      "managerId": "the-elites",
-      "managerName": "The Elites"
+      "managerId": "eli",
+      "managerName": "Eli"
     },
     {
       "year": 2017,
       "place": 2,
       "team": "Le'Voen a prayer",
       "key": "le'voen a prayer",
-      "managerId": "le-voen-a-prayer",
-      "managerName": "Le'Voen a prayer"
+      "managerId": "caleb",
+      "managerName": "Caleb"
     },
     {
       "year": 2017,
       "place": 3,
       "team": "flaccoroni and cheese",
       "key": "flaccoroni and cheese",
-      "managerId": "flaccoroni-and-cheese",
-      "managerName": "flaccoroni and cheese"
+      "managerId": "michael",
+      "managerName": "Michael"
     },
     {
       "year": 2016,
       "place": 1,
       "team": "da winning team",
       "key": "da winning team",
-      "managerId": "da-winning-team",
-      "managerName": "da winning team"
+      "managerId": "finn",
+      "managerName": "Finn"
     },
     {
       "year": 2016,
       "place": 2,
       "team": "Le'Voen a prayer",
       "key": "le'voen a prayer",
-      "managerId": "le-voen-a-prayer",
-      "managerName": "Le'Voen a prayer"
+      "managerId": "caleb",
+      "managerName": "Caleb"
     },
     {
       "year": 2016,
       "place": 3,
       "team": "Vick's houndogs",
       "key": "vick's houndogs",
-      "managerId": "vick-s-houndogs",
-      "managerName": "Vick's houndogs"
+      "managerId": "nathan",
+      "managerName": "Nathan"
     },
     {
       "year": 2015,
       "place": 1,
       "team": "Le'Voen a prayer",
       "key": "le'voen a prayer",
-      "managerId": "le-voen-a-prayer",
-      "managerName": "Le'Voen a prayer"
+      "managerId": "caleb",
+      "managerName": "Caleb"
     },
     {
       "year": 2015,
       "place": 2,
       "team": "THE KING OF FANTASY",
       "key": "the king of fantasy",
-      "managerId": "the-king-of-fantasy",
-      "managerName": "The King of Fantasy"
+      "managerId": "brady",
+      "managerName": "Brady"
     },
     {
       "year": 2015,
       "place": 3,
       "team": "Turn Down For Watt",
       "key": "turn down for watt",
-      "managerId": "turn-down-for-watt",
-      "managerName": "Turn Down For Watt"
+      "managerId": "lansden",
+      "managerName": "Lansden"
     },
     {
       "year": 2014,
       "place": 1,
       "team": "The Highlanders",
       "key": "the highlanders",
-      "managerId": "the-highlanders",
-      "managerName": "The Highlanders"
+      "managerId": "evan",
+      "managerName": "Evan"
     },
     {
       "year": 2014,
       "place": 2,
       "team": "The Elites",
       "key": "the elites",
-      "managerId": "the-elites",
-      "managerName": "The Elites"
+      "managerId": "eli",
+      "managerName": "Eli"
     },
     {
       "year": 2014,
       "place": 3,
       "team": "THE SURF BROS",
       "key": "the surf bros",
-      "managerId": "the-surf-bros",
-      "managerName": "THE SURF BROS"
+      "managerId": "moose",
+      "managerName": "Moose"
     },
     {
       "year": 2013,
       "place": 1,
       "team": "SCHMIDTY DUCK",
       "key": "schmidty duck",
-      "managerId": "schmidty-duck",
-      "managerName": "SCHMIDTY DUCK"
+      "managerId": "luke",
+      "managerName": "Luke"
     },
     {
       "year": 2013,
       "place": 2,
       "team": "Stop Look and Lose",
       "key": "stop look and lose",
-      "managerId": "stop-look-and-lose",
-      "managerName": "Stop Look and Lose"
+      "managerId": "michael",
+      "managerName": "Michael"
     },
     {
       "year": 2013,
       "place": 3,
       "team": "THE GUY WHO PICKED UP FOSTER",
       "key": "the guy who picked up foster",
-      "managerId": "the-guy-who-picked-up-foster",
-      "managerName": "THE GUY WHO PICKED UP FOSTER"
+      "managerId": "moose",
+      "managerName": "Moose"
     },
     {
       "year": 2012,
       "place": 1,
       "team": "THE KING OF FANTASY",
       "key": "the king of fantasy",
-      "managerId": "the-king-of-fantasy",
-      "managerName": "The King of Fantasy"
+      "managerId": "brady",
+      "managerName": "Brady"
     },
     {
       "year": 2012,
       "place": 2,
       "team": "THE FIGHTING IRISH",
       "key": "the fighting irish",
-      "managerId": "the-fighting-irish",
-      "managerName": "THE FIGHTING IRISH"
+      "managerId": "moose",
+      "managerName": "Moose"
     },
     {
       "year": 2012,
       "place": 3,
       "team": "Milton Mustangs",
       "key": "milton mustangs",
-      "managerId": "milton-mustangs",
-      "managerName": "Milton Mustangs"
+      "managerId": "will",
+      "managerName": "Will"
     }
   ],
   "standings": [
     {
       "year": 2025,
       "team": "SCHMIDTY DUCK",
-      "managerId": "schmidty-duck",
+      "managerId": "luke",
       "division": "Division 1",
       "w": 9,
       "l": 5,
@@ -4135,7 +3388,7 @@
     {
       "year": 2025,
       "team": "The Elites",
-      "managerId": "the-elites",
+      "managerId": "eli",
       "division": "Division 1",
       "w": 12,
       "l": 2,
@@ -4150,7 +3403,7 @@
     {
       "year": 2025,
       "team": "Le'Voen a prayer",
-      "managerId": "le-voen-a-prayer",
+      "managerId": "caleb",
       "division": "Division 1",
       "w": 9,
       "l": 5,
@@ -4165,7 +3418,7 @@
     {
       "year": 2025,
       "team": "Go Kart Mozart",
-      "managerId": "go-kart-mozart",
+      "managerId": "moose",
       "division": "Division 1",
       "w": 6,
       "l": 8,
@@ -4180,7 +3433,7 @@
     {
       "year": 2025,
       "team": "flaccoroni and cheese",
-      "managerId": "flaccoroni-and-cheese",
+      "managerId": "michael",
       "division": "Division 1",
       "w": 6,
       "l": 8,
@@ -4195,7 +3448,7 @@
     {
       "year": 2025,
       "team": "Turn Down For Watt",
-      "managerId": "turn-down-for-watt",
+      "managerId": "lansden",
       "division": "Division 1",
       "w": 7,
       "l": 7,
@@ -4210,7 +3463,7 @@
     {
       "year": 2025,
       "team": "Vick's houndogs",
-      "managerId": "vick-s-houndogs",
+      "managerId": "nathan",
       "division": "Division 1",
       "w": 5,
       "l": 9,
@@ -4225,7 +3478,7 @@
     {
       "year": 2025,
       "team": "da winning team",
-      "managerId": "da-winning-team",
+      "managerId": "finn",
       "division": "Division 1",
       "w": 6,
       "l": 8,
@@ -4240,7 +3493,7 @@
     {
       "year": 2025,
       "team": "The Highlanders",
-      "managerId": "the-highlanders",
+      "managerId": "evan",
       "division": "Division 1",
       "w": 5,
       "l": 9,
@@ -4255,7 +3508,7 @@
     {
       "year": 2025,
       "team": "The King of Fantasy",
-      "managerId": "the-king-of-fantasy",
+      "managerId": "brady",
       "division": "Division 1",
       "w": 5,
       "l": 9,
@@ -4270,7 +3523,7 @@
     {
       "year": 2024,
       "team": "Le'Voen a prayer",
-      "managerId": "le-voen-a-prayer",
+      "managerId": "caleb",
       "division": "Division 1",
       "w": 12,
       "l": 2,
@@ -4285,7 +3538,7 @@
     {
       "year": 2024,
       "team": "Turn Down For Watt",
-      "managerId": "turn-down-for-watt",
+      "managerId": "lansden",
       "division": "Division 1",
       "w": 9,
       "l": 5,
@@ -4300,7 +3553,7 @@
     {
       "year": 2024,
       "team": "flaccoroni and cheese",
-      "managerId": "flaccoroni-and-cheese",
+      "managerId": "michael",
       "division": "Division 1",
       "w": 8,
       "l": 6,
@@ -4315,7 +3568,7 @@
     {
       "year": 2024,
       "team": "da winning team",
-      "managerId": "da-winning-team",
+      "managerId": "finn",
       "division": "Division 1",
       "w": 8,
       "l": 6,
@@ -4330,7 +3583,7 @@
     {
       "year": 2024,
       "team": "The King of Fantasy",
-      "managerId": "the-king-of-fantasy",
+      "managerId": "brady",
       "division": "Division 1",
       "w": 8,
       "l": 6,
@@ -4345,7 +3598,7 @@
     {
       "year": 2024,
       "team": "Vick's houndogs",
-      "managerId": "vick-s-houndogs",
+      "managerId": "nathan",
       "division": "Division 1",
       "w": 7,
       "l": 7,
@@ -4360,7 +3613,7 @@
     {
       "year": 2024,
       "team": "SCHMIDTY DUCK",
-      "managerId": "schmidty-duck",
+      "managerId": "luke",
       "division": "Division 1",
       "w": 5,
       "l": 9,
@@ -4375,7 +3628,7 @@
     {
       "year": 2024,
       "team": "The Elites",
-      "managerId": "the-elites",
+      "managerId": "eli",
       "division": "Division 1",
       "w": 6,
       "l": 8,
@@ -4390,7 +3643,7 @@
     {
       "year": 2024,
       "team": "The Highlanders",
-      "managerId": "the-highlanders",
+      "managerId": "evan",
       "division": "Division 1",
       "w": 4,
       "l": 10,
@@ -4405,7 +3658,7 @@
     {
       "year": 2024,
       "team": "Go Kart Mozart",
-      "managerId": "go-kart-mozart",
+      "managerId": "moose",
       "division": "Division 1",
       "w": 3,
       "l": 11,
@@ -4420,7 +3673,7 @@
     {
       "year": 2023,
       "team": "da winning team",
-      "managerId": "da-winning-team",
+      "managerId": "finn",
       "division": "Division 1",
       "w": 9,
       "l": 5,
@@ -4435,7 +3688,7 @@
     {
       "year": 2023,
       "team": "Vick's houndogs",
-      "managerId": "vick-s-houndogs",
+      "managerId": "nathan",
       "division": "Division 1",
       "w": 8,
       "l": 6,
@@ -4450,7 +3703,7 @@
     {
       "year": 2023,
       "team": "Le'Voen a prayer",
-      "managerId": "le-voen-a-prayer",
+      "managerId": "caleb",
       "division": "Division 1",
       "w": 9,
       "l": 5,
@@ -4465,7 +3718,7 @@
     {
       "year": 2023,
       "team": "Turn Down For Watt",
-      "managerId": "turn-down-for-watt",
+      "managerId": "lansden",
       "division": "Division 1",
       "w": 10,
       "l": 4,
@@ -4480,7 +3733,7 @@
     {
       "year": 2023,
       "team": "The Highlanders",
-      "managerId": "the-highlanders",
+      "managerId": "evan",
       "division": "Division 1",
       "w": 7,
       "l": 7,
@@ -4495,7 +3748,7 @@
     {
       "year": 2023,
       "team": "Go Kart Mozart",
-      "managerId": "go-kart-mozart",
+      "managerId": "moose",
       "division": "Division 1",
       "w": 9,
       "l": 5,
@@ -4510,7 +3763,7 @@
     {
       "year": 2023,
       "team": "flaccoroni and cheese",
-      "managerId": "flaccoroni-and-cheese",
+      "managerId": "michael",
       "division": "Division 1",
       "w": 5,
       "l": 9,
@@ -4525,7 +3778,7 @@
     {
       "year": 2023,
       "team": "The Elites",
-      "managerId": "the-elites",
+      "managerId": "eli",
       "division": "Division 1",
       "w": 2,
       "l": 12,
@@ -4540,7 +3793,7 @@
     {
       "year": 2023,
       "team": "SCHMIDTY DUCK",
-      "managerId": "schmidty-duck",
+      "managerId": "luke",
       "division": "Division 1",
       "w": 5,
       "l": 9,
@@ -4555,7 +3808,7 @@
     {
       "year": 2023,
       "team": "The King of Fantasy",
-      "managerId": "the-king-of-fantasy",
+      "managerId": "brady",
       "division": "Division 1",
       "w": 6,
       "l": 8,
@@ -4570,7 +3823,7 @@
     {
       "year": 2022,
       "team": "Turn Down For Watt",
-      "managerId": "turn-down-for-watt",
+      "managerId": "lansden",
       "division": "Division 1",
       "w": 8,
       "l": 6,
@@ -4585,7 +3838,7 @@
     {
       "year": 2022,
       "team": "SCHMIDTY DUCK",
-      "managerId": "schmidty-duck",
+      "managerId": "luke",
       "division": "Division 1",
       "w": 10,
       "l": 4,
@@ -4600,7 +3853,7 @@
     {
       "year": 2022,
       "team": "Go Kart Mozart",
-      "managerId": "go-kart-mozart",
+      "managerId": "moose",
       "division": "Division 1",
       "w": 11,
       "l": 3,
@@ -4615,7 +3868,7 @@
     {
       "year": 2022,
       "team": "Vick's houndogs",
-      "managerId": "vick-s-houndogs",
+      "managerId": "nathan",
       "division": "Division 1",
       "w": 7,
       "l": 7,
@@ -4630,7 +3883,7 @@
     {
       "year": 2022,
       "team": "da winning team",
-      "managerId": "da-winning-team",
+      "managerId": "finn",
       "division": "Division 1",
       "w": 8,
       "l": 6,
@@ -4645,7 +3898,7 @@
     {
       "year": 2022,
       "team": "The King of Fantasy",
-      "managerId": "the-king-of-fantasy",
+      "managerId": "brady",
       "division": "Division 1",
       "w": 7,
       "l": 7,
@@ -4660,7 +3913,7 @@
     {
       "year": 2022,
       "team": "Le'Voen a prayer",
-      "managerId": "le-voen-a-prayer",
+      "managerId": "caleb",
       "division": "Division 1",
       "w": 7,
       "l": 7,
@@ -4675,7 +3928,7 @@
     {
       "year": 2022,
       "team": "flaccoroni and cheese",
-      "managerId": "flaccoroni-and-cheese",
+      "managerId": "michael",
       "division": "Division 1",
       "w": 4,
       "l": 10,
@@ -4690,7 +3943,7 @@
     {
       "year": 2022,
       "team": "The Elites",
-      "managerId": "the-elites",
+      "managerId": "eli",
       "division": "Division 1",
       "w": 2,
       "l": 12,
@@ -4705,7 +3958,7 @@
     {
       "year": 2022,
       "team": "The Highlanders",
-      "managerId": "the-highlanders",
+      "managerId": "evan",
       "division": "Division 1",
       "w": 6,
       "l": 8,
@@ -4720,7 +3973,7 @@
     {
       "year": 2021,
       "team": "Le'Voen a prayer",
-      "managerId": "le-voen-a-prayer",
+      "managerId": "caleb",
       "division": "Division 1",
       "w": 10,
       "l": 4,
@@ -4735,7 +3988,7 @@
     {
       "year": 2021,
       "team": "The Elites",
-      "managerId": "the-elites",
+      "managerId": "eli",
       "division": "Division 1",
       "w": 10,
       "l": 4,
@@ -4750,7 +4003,7 @@
     {
       "year": 2021,
       "team": "Vick's houndogs",
-      "managerId": "vick-s-houndogs",
+      "managerId": "nathan",
       "division": "Division 1",
       "w": 9,
       "l": 5,
@@ -4765,7 +4018,7 @@
     {
       "year": 2021,
       "team": "flaccoroni and cheese",
-      "managerId": "flaccoroni-and-cheese",
+      "managerId": "michael",
       "division": "Division 1",
       "w": 8,
       "l": 6,
@@ -4780,7 +4033,7 @@
     {
       "year": 2021,
       "team": "Turn Down For Watt",
-      "managerId": "turn-down-for-watt",
+      "managerId": "lansden",
       "division": "Division 1",
       "w": 7,
       "l": 7,
@@ -4795,7 +4048,7 @@
     {
       "year": 2021,
       "team": "da winning team",
-      "managerId": "da-winning-team",
+      "managerId": "finn",
       "division": "Division 1",
       "w": 7,
       "l": 7,
@@ -4810,7 +4063,7 @@
     {
       "year": 2021,
       "team": "The 2002 Miami Hurricanes",
-      "managerId": "the-2002-miami-hurricanes",
+      "managerId": "moose",
       "division": "Division 1",
       "w": 7,
       "l": 7,
@@ -4825,7 +4078,7 @@
     {
       "year": 2021,
       "team": "the miracle workers",
-      "managerId": "the-miracle-workers",
+      "managerId": "brady",
       "division": "Division 1",
       "w": 6,
       "l": 8,
@@ -4840,7 +4093,7 @@
     {
       "year": 2021,
       "team": "Rolling With Mahomies",
-      "managerId": "rolling-with-mahomies",
+      "managerId": "evan",
       "division": "Division 1",
       "w": 3,
       "l": 11,
@@ -4855,7 +4108,7 @@
     {
       "year": 2021,
       "team": "Beats by Ray",
-      "managerId": "beats-by-ray",
+      "managerId": "luke",
       "division": "Division 1",
       "w": 3,
       "l": 11,
@@ -4870,7 +4123,7 @@
     {
       "year": 2020,
       "team": "Le'Voen a prayer",
-      "managerId": "le-voen-a-prayer",
+      "managerId": "caleb",
       "division": "Division 1",
       "w": 13,
       "l": 0,
@@ -4885,7 +4138,7 @@
     {
       "year": 2020,
       "team": "Rolling With Mahomies",
-      "managerId": "rolling-with-mahomies",
+      "managerId": "evan",
       "division": "Division 1",
       "w": 9,
       "l": 4,
@@ -4900,7 +4153,7 @@
     {
       "year": 2020,
       "team": "the miracle workers",
-      "managerId": "the-miracle-workers",
+      "managerId": "brady",
       "division": "Division 1",
       "w": 6,
       "l": 7,
@@ -4915,7 +4168,7 @@
     {
       "year": 2020,
       "team": "The Elites",
-      "managerId": "the-elites",
+      "managerId": "eli",
       "division": "Division 1",
       "w": 7,
       "l": 6,
@@ -4930,7 +4183,7 @@
     {
       "year": 2020,
       "team": "da winning team",
-      "managerId": "da-winning-team",
+      "managerId": "finn",
       "division": "Division 1",
       "w": 7,
       "l": 6,
@@ -4945,7 +4198,7 @@
     {
       "year": 2020,
       "team": "Go Kart Mozart",
-      "managerId": "go-kart-mozart",
+      "managerId": "moose",
       "division": "Division 1",
       "w": 8,
       "l": 5,
@@ -4960,7 +4213,7 @@
     {
       "year": 2020,
       "team": "flaccoroni and cheese",
-      "managerId": "flaccoroni-and-cheese",
+      "managerId": "michael",
       "division": "Division 1",
       "w": 4,
       "l": 9,
@@ -4975,7 +4228,7 @@
     {
       "year": 2020,
       "team": "Beats by Ray",
-      "managerId": "beats-by-ray",
+      "managerId": "luke",
       "division": "Division 1",
       "w": 4,
       "l": 9,
@@ -4990,7 +4243,7 @@
     {
       "year": 2020,
       "team": "Vick's houndogs",
-      "managerId": "vick-s-houndogs",
+      "managerId": "nathan",
       "division": "Division 1",
       "w": 3,
       "l": 10,
@@ -5005,7 +4258,7 @@
     {
       "year": 2020,
       "team": "Turn Down For Watt",
-      "managerId": "turn-down-for-watt",
+      "managerId": "lansden",
       "division": "Division 1",
       "w": 4,
       "l": 9,
@@ -5020,7 +4273,7 @@
     {
       "year": 2019,
       "team": "da winning team",
-      "managerId": "da-winning-team",
+      "managerId": "finn",
       "division": "Division 1",
       "w": 9,
       "l": 4,
@@ -5035,7 +4288,7 @@
     {
       "year": 2019,
       "team": "flaccoroni and cheese",
-      "managerId": "flaccoroni-and-cheese",
+      "managerId": "michael",
       "division": "Division 1",
       "w": 8,
       "l": 5,
@@ -5050,7 +4303,7 @@
     {
       "year": 2019,
       "team": "Le'Voen a prayer",
-      "managerId": "le-voen-a-prayer",
+      "managerId": "caleb",
       "division": "Division 1",
       "w": 8,
       "l": 5,
@@ -5065,7 +4318,7 @@
     {
       "year": 2019,
       "team": "Vick's houndogs",
-      "managerId": "vick-s-houndogs",
+      "managerId": "nathan",
       "division": "Division 1",
       "w": 8,
       "l": 5,
@@ -5080,7 +4333,7 @@
     {
       "year": 2019,
       "team": "The Elites",
-      "managerId": "the-elites",
+      "managerId": "eli",
       "division": "Division 1",
       "w": 8,
       "l": 5,
@@ -5095,7 +4348,7 @@
     {
       "year": 2019,
       "team": "the miracle workers",
-      "managerId": "the-miracle-workers",
+      "managerId": "brady",
       "division": "Division 1",
       "w": 7,
       "l": 6,
@@ -5110,7 +4363,7 @@
     {
       "year": 2019,
       "team": "Go Kart Mozart",
-      "managerId": "go-kart-mozart",
+      "managerId": "moose",
       "division": "Division 1",
       "w": 7,
       "l": 6,
@@ -5125,7 +4378,7 @@
     {
       "year": 2019,
       "team": "Goff Balls",
-      "managerId": "goff-balls",
+      "managerId": "lansden",
       "division": "Division 1",
       "w": 3,
       "l": 10,
@@ -5140,7 +4393,7 @@
     {
       "year": 2019,
       "team": "Beats by Ray",
-      "managerId": "beats-by-ray",
+      "managerId": "luke",
       "division": "Division 1",
       "w": 4,
       "l": 9,
@@ -5155,7 +4408,7 @@
     {
       "year": 2019,
       "team": "Dak to the future",
-      "managerId": "dak-to-the-future",
+      "managerId": "evan",
       "division": "Division 1",
       "w": 3,
       "l": 10,
@@ -5170,7 +4423,7 @@
     {
       "year": 2018,
       "team": "The Highlanders",
-      "managerId": "the-highlanders",
+      "managerId": "evan",
       "division": "Division 1",
       "w": 10,
       "l": 3,
@@ -5185,7 +4438,7 @@
     {
       "year": 2018,
       "team": "flaccoroni and cheese",
-      "managerId": "flaccoroni-and-cheese",
+      "managerId": "michael",
       "division": "Division 1",
       "w": 8,
       "l": 5,
@@ -5200,7 +4453,7 @@
     {
       "year": 2018,
       "team": "Beats by Ray",
-      "managerId": "beats-by-ray",
+      "managerId": "luke",
       "division": "Division 1",
       "w": 8,
       "l": 5,
@@ -5215,7 +4468,7 @@
     {
       "year": 2018,
       "team": "the miracle workers",
-      "managerId": "the-miracle-workers",
+      "managerId": "brady",
       "division": "Division 1",
       "w": 7,
       "l": 6,
@@ -5230,7 +4483,7 @@
     {
       "year": 2018,
       "team": "Le'Voen a prayer",
-      "managerId": "le-voen-a-prayer",
+      "managerId": "caleb",
       "division": "Division 1",
       "w": 6,
       "l": 7,
@@ -5245,7 +4498,7 @@
     {
       "year": 2018,
       "team": "da winning team",
-      "managerId": "da-winning-team",
+      "managerId": "finn",
       "division": "Division 1",
       "w": 7,
       "l": 6,
@@ -5260,7 +4513,7 @@
     {
       "year": 2018,
       "team": "Go Kart Mozart",
-      "managerId": "go-kart-mozart",
+      "managerId": "moose",
       "division": "Division 1",
       "w": 7,
       "l": 6,
@@ -5269,13 +4522,13 @@
       "seed": 4,
       "seedShared": true,
       "finalRank": 7,
-      "madePlayoffs": false,
-      "seedVsFinish": null
+      "madePlayoffs": true,
+      "seedVsFinish": -3
     },
     {
       "year": 2018,
       "team": "Turn Down For Watt",
-      "managerId": "turn-down-for-watt",
+      "managerId": "lansden",
       "division": "Division 1",
       "w": 5,
       "l": 8,
@@ -5284,13 +4537,13 @@
       "seed": 8,
       "seedShared": false,
       "finalRank": 8,
-      "madePlayoffs": false,
-      "seedVsFinish": null
+      "madePlayoffs": true,
+      "seedVsFinish": 0
     },
     {
       "year": 2018,
       "team": "The Elites",
-      "managerId": "the-elites",
+      "managerId": "eli",
       "division": "Division 1",
       "w": 3,
       "l": 10,
@@ -5305,7 +4558,7 @@
     {
       "year": 2018,
       "team": "Vick's houndogs",
-      "managerId": "vick-s-houndogs",
+      "managerId": "nathan",
       "division": "Division 1",
       "w": 4,
       "l": 9,
@@ -5320,7 +4573,7 @@
     {
       "year": 2017,
       "team": "The Elites",
-      "managerId": "the-elites",
+      "managerId": "eli",
       "division": "Division 1",
       "w": 9,
       "l": 4,
@@ -5335,7 +4588,7 @@
     {
       "year": 2017,
       "team": "Le'Voen a prayer",
-      "managerId": "le-voen-a-prayer",
+      "managerId": "caleb",
       "division": "Division 1",
       "w": 11,
       "l": 2,
@@ -5350,7 +4603,7 @@
     {
       "year": 2017,
       "team": "flaccoroni and cheese",
-      "managerId": "flaccoroni-and-cheese",
+      "managerId": "michael",
       "division": "Division 1",
       "w": 7,
       "l": 6,
@@ -5365,7 +4618,7 @@
     {
       "year": 2017,
       "team": "Beats by Ray",
-      "managerId": "beats-by-ray",
+      "managerId": "luke",
       "division": "Division 1",
       "w": 8,
       "l": 5,
@@ -5380,7 +4633,7 @@
     {
       "year": 2017,
       "team": "da winning team",
-      "managerId": "da-winning-team",
+      "managerId": "finn",
       "division": "Division 1",
       "w": 9,
       "l": 4,
@@ -5395,7 +4648,7 @@
     {
       "year": 2017,
       "team": "Vick's houndogs",
-      "managerId": "vick-s-houndogs",
+      "managerId": "nathan",
       "division": "Division 1",
       "w": 5,
       "l": 8,
@@ -5410,7 +4663,7 @@
     {
       "year": 2017,
       "team": "Turn Down For Watt",
-      "managerId": "turn-down-for-watt",
+      "managerId": "lansden",
       "division": "Division 1",
       "w": 8,
       "l": 5,
@@ -5425,7 +4678,7 @@
     {
       "year": 2017,
       "team": "28-3",
-      "managerId": "28-3",
+      "managerId": "brady",
       "division": "Division 1",
       "w": 6,
       "l": 7,
@@ -5440,7 +4693,7 @@
     {
       "year": 2017,
       "team": "Hernandez' Hitmen",
-      "managerId": "hernandez-hitmen",
+      "managerId": "chase",
       "division": "Division 1",
       "w": 4,
       "l": 9,
@@ -5455,7 +4708,7 @@
     {
       "year": 2017,
       "team": "The Highlanders",
-      "managerId": "the-highlanders",
+      "managerId": "evan",
       "division": "Division 1",
       "w": 3,
       "l": 10,
@@ -5470,7 +4723,7 @@
     {
       "year": 2017,
       "team": "Why Me",
-      "managerId": "why-me",
+      "managerId": "moose",
       "division": "Division 1",
       "w": 4,
       "l": 9,
@@ -5485,7 +4738,7 @@
     {
       "year": 2017,
       "team": "UNLEASH THE BEASLEY",
-      "managerId": "unleash-the-beasley",
+      "managerId": "will",
       "division": "Division 1",
       "w": 4,
       "l": 9,
@@ -5500,7 +4753,7 @@
     {
       "year": 2016,
       "team": "da winning team",
-      "managerId": "da-winning-team",
+      "managerId": "finn",
       "division": "Division 1",
       "w": 7,
       "l": 6,
@@ -5515,7 +4768,7 @@
     {
       "year": 2016,
       "team": "Le'Voen a prayer",
-      "managerId": "le-voen-a-prayer",
+      "managerId": "caleb",
       "division": "Division 1",
       "w": 8,
       "l": 5,
@@ -5530,7 +4783,7 @@
     {
       "year": 2016,
       "team": "Vick's houndogs",
-      "managerId": "vick-s-houndogs",
+      "managerId": "nathan",
       "division": "Division 1",
       "w": 9,
       "l": 4,
@@ -5545,7 +4798,7 @@
     {
       "year": 2016,
       "team": "THE KING OF FANTASY",
-      "managerId": "the-king-of-fantasy",
+      "managerId": "brady",
       "division": "Division 1",
       "w": 8,
       "l": 5,
@@ -5560,7 +4813,7 @@
     {
       "year": 2016,
       "team": "The Elites",
-      "managerId": "the-elites",
+      "managerId": "eli",
       "division": "Division 1",
       "w": 8,
       "l": 5,
@@ -5575,7 +4828,7 @@
     {
       "year": 2016,
       "team": "Turn Down For Watt",
-      "managerId": "turn-down-for-watt",
+      "managerId": "lansden",
       "division": "Division 1",
       "w": 8,
       "l": 5,
@@ -5590,7 +4843,7 @@
     {
       "year": 2016,
       "team": "Hernandez' Hitmen",
-      "managerId": "hernandez-hitmen",
+      "managerId": "chase",
       "division": "Division 1",
       "w": 6,
       "l": 7,
@@ -5605,7 +4858,7 @@
     {
       "year": 2016,
       "team": "UNLEASH THE BEASLEY",
-      "managerId": "unleash-the-beasley",
+      "managerId": "will",
       "division": "Division 1",
       "w": 6,
       "l": 7,
@@ -5620,7 +4873,7 @@
     {
       "year": 2016,
       "team": "The Highlanders",
-      "managerId": "the-highlanders",
+      "managerId": "evan",
       "division": "Division 1",
       "w": 6,
       "l": 7,
@@ -5635,7 +4888,7 @@
     {
       "year": 2016,
       "team": "Beats by Ray",
-      "managerId": "beats-by-ray",
+      "managerId": "luke",
       "division": "Division 1",
       "w": 6,
       "l": 7,
@@ -5650,7 +4903,7 @@
     {
       "year": 2016,
       "team": "Injuries Suck",
-      "managerId": "injuries-suck",
+      "managerId": "moose",
       "division": "Division 1",
       "w": 2,
       "l": 11,
@@ -5665,7 +4918,7 @@
     {
       "year": 2016,
       "team": "flaccoroni and cheese",
-      "managerId": "flaccoroni-and-cheese",
+      "managerId": "michael",
       "division": "Division 1",
       "w": 4,
       "l": 9,
@@ -5680,7 +4933,7 @@
     {
       "year": 2015,
       "team": "Le'Voen a prayer",
-      "managerId": "le-voen-a-prayer",
+      "managerId": "caleb",
       "division": "Division 1",
       "w": 8,
       "l": 5,
@@ -5695,7 +4948,7 @@
     {
       "year": 2015,
       "team": "THE KING OF FANTASY",
-      "managerId": "the-king-of-fantasy",
+      "managerId": "brady",
       "division": "Division 1",
       "w": 8,
       "l": 5,
@@ -5710,7 +4963,7 @@
     {
       "year": 2015,
       "team": "Turn Down For Watt",
-      "managerId": "turn-down-for-watt",
+      "managerId": "lansden",
       "division": "Division 1",
       "w": 10,
       "l": 3,
@@ -5725,7 +4978,7 @@
     {
       "year": 2015,
       "team": "flaccoroni and cheese",
-      "managerId": "flaccoroni-and-cheese",
+      "managerId": "michael",
       "division": "Division 1",
       "w": 8,
       "l": 5,
@@ -5740,7 +4993,7 @@
     {
       "year": 2015,
       "team": "Geno's Jawdroppers",
-      "managerId": "geno-s-jawdroppers",
+      "managerId": "nathan",
       "division": "Division 1",
       "w": 8,
       "l": 5,
@@ -5755,7 +5008,7 @@
     {
       "year": 2015,
       "team": "da winning team",
-      "managerId": "da-winning-team",
+      "managerId": "finn",
       "division": "Division 1",
       "w": 8,
       "l": 5,
@@ -5770,7 +5023,7 @@
     {
       "year": 2015,
       "team": "Beats by Ray",
-      "managerId": "beats-by-ray",
+      "managerId": "luke",
       "division": "Division 1",
       "w": 8,
       "l": 5,
@@ -5785,7 +5038,7 @@
     {
       "year": 2015,
       "team": "The Elites",
-      "managerId": "the-elites",
+      "managerId": "eli",
       "division": "Division 1",
       "w": 8,
       "l": 5,
@@ -5800,7 +5053,7 @@
     {
       "year": 2015,
       "team": "HIGHLIGHT REEL",
-      "managerId": "highlight-reel",
+      "managerId": "will",
       "division": "Division 1",
       "w": 5,
       "l": 8,
@@ -5815,7 +5068,7 @@
     {
       "year": 2015,
       "team": "2legit2quit",
-      "managerId": "2legit2quit",
+      "managerId": "ds",
       "division": "Division 1",
       "w": 3,
       "l": 10,
@@ -5830,7 +5083,7 @@
     {
       "year": 2015,
       "team": "coles untouchables",
-      "managerId": "coles-untouchables",
+      "managerId": "cole",
       "division": "Division 1",
       "w": 6,
       "l": 7,
@@ -5845,7 +5098,7 @@
     {
       "year": 2015,
       "team": "The Highlanders",
-      "managerId": "the-highlanders",
+      "managerId": "evan",
       "division": "Division 1",
       "w": 7,
       "l": 6,
@@ -5860,7 +5113,7 @@
     {
       "year": 2015,
       "team": "LeGarrette ON MY LEVEL",
-      "managerId": "legarrette-on-my-level",
+      "managerId": "chase",
       "division": "Division 1",
       "w": 4,
       "l": 9,
@@ -5875,7 +5128,7 @@
     {
       "year": 2015,
       "team": "GO CART MOZART",
-      "managerId": "go-cart-mozart",
+      "managerId": "moose",
       "division": "Division 1",
       "w": 0,
       "l": 13,
@@ -5890,7 +5143,7 @@
     {
       "year": 2014,
       "team": "The Highlanders",
-      "managerId": "the-highlanders",
+      "managerId": "evan",
       "division": "Division 1",
       "w": 12,
       "l": 1,
@@ -5905,7 +5158,7 @@
     {
       "year": 2014,
       "team": "The Elites",
-      "managerId": "the-elites",
+      "managerId": "eli",
       "division": "Division 1",
       "w": 11,
       "l": 2,
@@ -5920,7 +5173,7 @@
     {
       "year": 2014,
       "team": "THE SURF BROS",
-      "managerId": "the-surf-bros",
+      "managerId": "moose",
       "division": "Division 1",
       "w": 7,
       "l": 6,
@@ -5935,7 +5188,7 @@
     {
       "year": 2014,
       "team": "Turn Down For Watt",
-      "managerId": "turn-down-for-watt",
+      "managerId": "lansden",
       "division": "Division 1",
       "w": 12,
       "l": 1,
@@ -5950,7 +5203,7 @@
     {
       "year": 2014,
       "team": "The fast and the Julio",
-      "managerId": "the-fast-and-the-julio",
+      "managerId": "phil",
       "division": "Division 1",
       "w": 5,
       "l": 8,
@@ -5965,7 +5218,7 @@
     {
       "year": 2014,
       "team": "BULLDOGS",
-      "managerId": "bulldogs",
+      "managerId": "nathan",
       "division": "Division 1",
       "w": 7,
       "l": 6,
@@ -5980,7 +5233,7 @@
     {
       "year": 2014,
       "team": "Flaccoroni and cheese",
-      "managerId": "flaccoroni-and-cheese",
+      "managerId": "michael",
       "division": "Division 1",
       "w": 9,
       "l": 4,
@@ -5995,7 +5248,7 @@
     {
       "year": 2014,
       "team": "swaggy mc swag",
-      "managerId": "swaggy-mc-swag",
+      "managerId": "connor",
       "division": "Division 1",
       "w": 5,
       "l": 8,
@@ -6010,7 +5263,7 @@
     {
       "year": 2014,
       "team": "THE KING OF FANTASY",
-      "managerId": "the-king-of-fantasy",
+      "managerId": "brady",
       "division": "Division 1",
       "w": 4,
       "l": 9,
@@ -6025,7 +5278,7 @@
     {
       "year": 2014,
       "team": "Coles untouchables",
-      "managerId": "coles-untouchables",
+      "managerId": "cole",
       "division": "Division 1",
       "w": 2,
       "l": 11,
@@ -6040,7 +5293,7 @@
     {
       "year": 2014,
       "team": "SCHMIDTY DUCK",
-      "managerId": "schmidty-duck",
+      "managerId": "luke",
       "division": "Division 1",
       "w": 2,
       "l": 11,
@@ -6055,7 +5308,7 @@
     {
       "year": 2014,
       "team": "CAMBRIDGE BOY",
-      "managerId": "cambridge-boy",
+      "managerId": "will",
       "division": "Division 1",
       "w": 2,
       "l": 11,
@@ -6070,7 +5323,7 @@
     {
       "year": 2013,
       "team": "SCHMIDTY DUCK",
-      "managerId": "schmidty-duck",
+      "managerId": "luke",
       "division": "Division 2",
       "w": 10,
       "l": 3,
@@ -6085,7 +5338,7 @@
     {
       "year": 2013,
       "team": "Stop Look and Lose",
-      "managerId": "stop-look-and-lose",
+      "managerId": "michael",
       "division": "Division 1",
       "w": 4,
       "l": 9,
@@ -6100,7 +5353,7 @@
     {
       "year": 2013,
       "team": "THE GUY WHO PICKED UP FOSTER",
-      "managerId": "the-guy-who-picked-up-foster",
+      "managerId": "moose",
       "division": "Division 1",
       "w": 9,
       "l": 4,
@@ -6115,7 +5368,7 @@
     {
       "year": 2013,
       "team": "The Highlanders",
-      "managerId": "the-highlanders",
+      "managerId": "evan",
       "division": "Division 1",
       "w": 7,
       "l": 6,
@@ -6130,7 +5383,7 @@
     {
       "year": 2013,
       "team": "THE KING OF FANTASY",
-      "managerId": "the-king-of-fantasy",
+      "managerId": "brady",
       "division": "Division 1",
       "w": 10,
       "l": 3,
@@ -6145,7 +5398,7 @@
     {
       "year": 2013,
       "team": "The Elites",
-      "managerId": "the-elites",
+      "managerId": "eli",
       "division": "Division 2",
       "w": 8,
       "l": 5,
@@ -6160,7 +5413,7 @@
     {
       "year": 2013,
       "team": "THE BIG MAN ON CAMPUS",
-      "managerId": "the-big-man-on-campus",
+      "managerId": "will",
       "division": "Division 2",
       "w": 7,
       "l": 6,
@@ -6175,7 +5428,7 @@
     {
       "year": 2013,
       "team": "I'mGonnaWhipMichael",
-      "managerId": "i-mgonnawhipmichael",
+      "managerId": "john",
       "division": "Division 2",
       "w": 4,
       "l": 9,
@@ -6190,7 +5443,7 @@
     {
       "year": 2013,
       "team": "Coles 2nd Team",
-      "managerId": "coles-2nd-team",
+      "managerId": "cole",
       "division": "Division 1",
       "w": 3,
       "l": 10,
@@ -6205,7 +5458,7 @@
     {
       "year": 2013,
       "team": "swaggy mc swag",
-      "managerId": "swaggy-mc-swag",
+      "managerId": "connor",
       "division": "Division 2",
       "w": 3,
       "l": 10,
@@ -6220,7 +5473,7 @@
     {
       "year": 2012,
       "team": "THE KING OF FANTASY",
-      "managerId": "the-king-of-fantasy",
+      "managerId": "brady",
       "division": "Division 1",
       "w": 10,
       "l": 3,
@@ -6235,7 +5488,7 @@
     {
       "year": 2012,
       "team": "THE FIGHTING IRISH",
-      "managerId": "the-fighting-irish",
+      "managerId": "moose",
       "division": "Division 1",
       "w": 3,
       "l": 10,
@@ -6250,7 +5503,7 @@
     {
       "year": 2012,
       "team": "Milton Mustangs",
-      "managerId": "milton-mustangs",
+      "managerId": "will",
       "division": "Division 1",
       "w": 10,
       "l": 3,
@@ -6265,7 +5518,7 @@
     {
       "year": 2012,
       "team": "The Christian Wolverines",
-      "managerId": "the-christian-wolverines",
+      "managerId": "eli",
       "division": "Division 1",
       "w": 5,
       "l": 8,
@@ -6280,7 +5533,7 @@
     {
       "year": 2012,
       "team": "Vipers",
-      "managerId": "vipers",
+      "managerId": "connor",
       "division": "Division 1",
       "w": 6,
       "l": 7,
@@ -6289,13 +5542,13 @@
       "seed": 3,
       "seedShared": false,
       "finalRank": 5,
-      "madePlayoffs": false,
-      "seedVsFinish": null
+      "madePlayoffs": true,
+      "seedVsFinish": -2
     },
     {
       "year": 2012,
       "team": "coles untouchables",
-      "managerId": "coles-untouchables",
+      "managerId": "cole",
       "division": "Division 1",
       "w": 5,
       "l": 8,
@@ -6304,8 +5557,8 @@
       "seed": 4,
       "seedShared": true,
       "finalRank": 6,
-      "madePlayoffs": false,
-      "seedVsFinish": null
+      "madePlayoffs": true,
+      "seedVsFinish": -2
     }
   ],
   "records": {
@@ -6316,8 +5569,8 @@
         "key": "the king of fantasy",
         "week": 12,
         "points": 271.98,
-        "managerId": "the-king-of-fantasy",
-        "managerName": "The King of Fantasy"
+        "managerId": "brady",
+        "managerName": "Brady"
       },
       {
         "year": 2022,
@@ -6325,8 +5578,8 @@
         "key": "go kart mozart",
         "week": 12,
         "points": 255.32,
-        "managerId": "go-kart-mozart",
-        "managerName": "Go Kart Mozart"
+        "managerId": "moose",
+        "managerName": "Moose"
       },
       {
         "year": 2014,
@@ -6334,8 +5587,8 @@
         "key": "the highlanders",
         "week": 11,
         "points": 252.54,
-        "managerId": "the-highlanders",
-        "managerName": "The Highlanders"
+        "managerId": "evan",
+        "managerName": "Evan"
       },
       {
         "year": 2018,
@@ -6343,8 +5596,8 @@
         "key": "the highlanders",
         "week": 16,
         "points": 247.96,
-        "managerId": "the-highlanders",
-        "managerName": "The Highlanders"
+        "managerId": "evan",
+        "managerName": "Evan"
       },
       {
         "year": 2021,
@@ -6352,8 +5605,8 @@
         "key": "vick's houndogs",
         "week": 17,
         "points": 245.18,
-        "managerId": "vick-s-houndogs",
-        "managerName": "Vick's houndogs"
+        "managerId": "nathan",
+        "managerName": "Nathan"
       },
       {
         "year": 2023,
@@ -6361,8 +5614,8 @@
         "key": "the highlanders",
         "week": 3,
         "points": 239.64,
-        "managerId": "the-highlanders",
-        "managerName": "The Highlanders"
+        "managerId": "evan",
+        "managerName": "Evan"
       },
       {
         "year": 2024,
@@ -6370,8 +5623,8 @@
         "key": "schmidty duck",
         "week": 16,
         "points": 235.88,
-        "managerId": "schmidty-duck",
-        "managerName": "SCHMIDTY DUCK"
+        "managerId": "luke",
+        "managerName": "Luke"
       },
       {
         "year": 2020,
@@ -6379,8 +5632,8 @@
         "key": "le'voen a prayer",
         "week": 7,
         "points": 233.78,
-        "managerId": "le-voen-a-prayer",
-        "managerName": "Le'Voen a prayer"
+        "managerId": "caleb",
+        "managerName": "Caleb"
       },
       {
         "year": 2025,
@@ -6388,8 +5641,8 @@
         "key": "the elites",
         "week": 10,
         "points": 218.82,
-        "managerId": "the-elites",
-        "managerName": "The Elites"
+        "managerId": "eli",
+        "managerName": "Eli"
       },
       {
         "year": 2019,
@@ -6397,8 +5650,8 @@
         "key": "vick's houndogs",
         "week": 8,
         "points": 216,
-        "managerId": "vick-s-houndogs",
-        "managerName": "Vick's houndogs"
+        "managerId": "nathan",
+        "managerName": "Nathan"
       },
       {
         "year": 2016,
@@ -6406,8 +5659,8 @@
         "key": "unleash the beasley",
         "week": 1,
         "points": 209.2,
-        "managerId": "unleash-the-beasley",
-        "managerName": "UNLEASH THE BEASLEY"
+        "managerId": "will",
+        "managerName": "Will"
       },
       {
         "year": 2017,
@@ -6415,8 +5668,8 @@
         "key": "vick's houndogs",
         "week": 8,
         "points": 201.98,
-        "managerId": "vick-s-houndogs",
-        "managerName": "Vick's houndogs"
+        "managerId": "nathan",
+        "managerName": "Nathan"
       },
       {
         "year": 2015,
@@ -6424,8 +5677,8 @@
         "key": "highlight reel",
         "week": 3,
         "points": 161.34,
-        "managerId": "highlight-reel",
-        "managerName": "HIGHLIGHT REEL"
+        "managerId": "will",
+        "managerName": "Will"
       },
       {
         "year": 2012,
@@ -6433,8 +5686,8 @@
         "key": "the christian wolverines",
         "week": 14,
         "points": 146.8,
-        "managerId": "the-christian-wolverines",
-        "managerName": "The Christian Wolverines"
+        "managerId": "eli",
+        "managerName": "Eli"
       }
     ],
     "season": [
@@ -6443,112 +5696,112 @@
         "team": "THE KING OF FANTASY",
         "key": "the king of fantasy",
         "points": 2484.78,
-        "managerId": "the-king-of-fantasy",
-        "managerName": "The King of Fantasy"
+        "managerId": "brady",
+        "managerName": "Brady"
       },
       {
         "year": 2022,
         "team": "Go Kart Mozart",
         "key": "go kart mozart",
         "points": 2472.18,
-        "managerId": "go-kart-mozart",
-        "managerName": "Go Kart Mozart"
+        "managerId": "moose",
+        "managerName": "Moose"
       },
       {
         "year": 2020,
         "team": "Le'Voen a prayer",
         "key": "le'voen a prayer",
         "points": 2432.56,
-        "managerId": "le-voen-a-prayer",
-        "managerName": "Le'Voen a prayer"
+        "managerId": "caleb",
+        "managerName": "Caleb"
       },
       {
         "year": 2021,
         "team": "Le'Voen a prayer",
         "key": "le'voen a prayer",
         "points": 2409.26,
-        "managerId": "le-voen-a-prayer",
-        "managerName": "Le'Voen a prayer"
+        "managerId": "caleb",
+        "managerName": "Caleb"
       },
       {
         "year": 2014,
         "team": "Turn Down For Watt",
         "key": "turn down for watt",
         "points": 2354.06,
-        "managerId": "turn-down-for-watt",
-        "managerName": "Turn Down For Watt"
+        "managerId": "lansden",
+        "managerName": "Lansden"
       },
       {
         "year": 2024,
         "team": "Le'Voen a prayer",
         "key": "le'voen a prayer",
         "points": 2339.42,
-        "managerId": "le-voen-a-prayer",
-        "managerName": "Le'Voen a prayer"
+        "managerId": "caleb",
+        "managerName": "Caleb"
       },
       {
         "year": 2018,
         "team": "The Highlanders",
         "key": "the highlanders",
         "points": 2292.76,
-        "managerId": "the-highlanders",
-        "managerName": "The Highlanders"
+        "managerId": "evan",
+        "managerName": "Evan"
       },
       {
         "year": 2025,
         "team": "The Elites",
         "key": "the elites",
         "points": 2256.28,
-        "managerId": "the-elites",
-        "managerName": "The Elites"
+        "managerId": "eli",
+        "managerName": "Eli"
       },
       {
         "year": 2019,
         "team": "flaccoroni and cheese",
         "key": "flaccoroni and cheese",
         "points": 2219,
-        "managerId": "flaccoroni-and-cheese",
-        "managerName": "flaccoroni and cheese"
+        "managerId": "michael",
+        "managerName": "Michael"
       },
       {
         "year": 2023,
         "team": "The King of Fantasy",
         "key": "the king of fantasy",
         "points": 2171.86,
-        "managerId": "the-king-of-fantasy",
-        "managerName": "The King of Fantasy"
+        "managerId": "brady",
+        "managerName": "Brady"
       },
       {
         "year": 2016,
         "team": "The Elites",
         "key": "the elites",
         "points": 1952.82,
-        "managerId": "the-elites",
-        "managerName": "The Elites"
+        "managerId": "eli",
+        "managerName": "Eli"
       },
       {
         "year": 2017,
         "team": "Le'Voen a prayer",
         "key": "le'voen a prayer",
         "points": 1893.8,
-        "managerId": "le-voen-a-prayer",
-        "managerName": "Le'Voen a prayer"
+        "managerId": "caleb",
+        "managerName": "Caleb"
       },
       {
         "year": 2015,
         "team": "Beats by Ray",
         "key": "beats by ray",
         "points": 1454.59,
-        "managerId": "beats-by-ray",
-        "managerName": "Beats by Ray"
+        "managerId": "luke",
+        "managerName": "Luke"
       },
       {
         "year": 2012,
         "team": "THE KING OF FANTASY",
         "key": "the king of fantasy",
         "points": 1411.18,
-        "managerId": "the-king-of-fantasy",
-        "managerName": "The King of Fantasy"
+        "managerId": "brady",
+        "managerName": "Brady"
       }
     ],
     "player": [
@@ -6561,8 +5814,8 @@
         "points": 101.8,
         "team": "BULLDOGS",
         "key": "bulldogs",
-        "managerId": "bulldogs",
-        "managerName": "BULLDOGS"
+        "managerId": "nathan",
+        "managerName": "Nathan"
       },
       {
         "year": 2013,
@@ -6573,8 +5826,8 @@
         "points": 88.4,
         "team": "THE KING OF FANTASY",
         "key": "the king of fantasy",
-        "managerId": "the-king-of-fantasy",
-        "managerName": "The King of Fantasy"
+        "managerId": "brady",
+        "managerName": "Brady"
       },
       {
         "year": 2022,
@@ -6585,8 +5838,8 @@
         "points": 74.8,
         "team": "Go Kart Mozart",
         "key": "go kart mozart",
-        "managerId": "go-kart-mozart",
-        "managerName": "Go Kart Mozart"
+        "managerId": "moose",
+        "managerName": "Moose"
       },
       {
         "year": 2021,
@@ -6597,8 +5850,8 @@
         "points": 74.4,
         "team": "Le'Voen a prayer",
         "key": "le'voen a prayer",
-        "managerId": "le-voen-a-prayer",
-        "managerName": "Le'Voen a prayer"
+        "managerId": "caleb",
+        "managerName": "Caleb"
       },
       {
         "year": 2020,
@@ -6609,8 +5862,8 @@
         "points": 72.2,
         "team": "da winning team",
         "key": "da winning team",
-        "managerId": "da-winning-team",
-        "managerName": "da winning team"
+        "managerId": "finn",
+        "managerName": "Finn"
       },
       {
         "year": 2016,
@@ -6621,8 +5874,8 @@
         "points": 70.8,
         "team": "The Elites",
         "key": "the elites",
-        "managerId": "the-elites",
-        "managerName": "The Elites"
+        "managerId": "eli",
+        "managerName": "Eli"
       },
       {
         "year": 2025,
@@ -6633,8 +5886,8 @@
         "points": 69.9,
         "team": "Turn Down For Watt",
         "key": "turn down for watt",
-        "managerId": "turn-down-for-watt",
-        "managerName": "Turn Down For Watt"
+        "managerId": "lansden",
+        "managerName": "Lansden"
       },
       {
         "year": 2024,
@@ -6645,8 +5898,8 @@
         "points": 65.4,
         "team": "Turn Down For Watt",
         "key": "turn down for watt",
-        "managerId": "turn-down-for-watt",
-        "managerName": "Turn Down For Watt"
+        "managerId": "lansden",
+        "managerName": "Lansden"
       },
       {
         "year": 2018,
@@ -6657,8 +5910,8 @@
         "points": 65.2,
         "team": "The Highlanders",
         "key": "the highlanders",
-        "managerId": "the-highlanders",
-        "managerName": "The Highlanders"
+        "managerId": "evan",
+        "managerName": "Evan"
       },
       {
         "year": 2019,
@@ -6669,8 +5922,8 @@
         "points": 63.7,
         "team": "Vick's houndogs",
         "key": "vick's houndogs",
-        "managerId": "vick-s-houndogs",
-        "managerName": "Vick's houndogs"
+        "managerId": "nathan",
+        "managerName": "Nathan"
       },
       {
         "year": 2023,
@@ -6681,8 +5934,8 @@
         "points": 61.5,
         "team": "The Elites",
         "key": "the elites",
-        "managerId": "the-elites",
-        "managerName": "The Elites"
+        "managerId": "eli",
+        "managerName": "Eli"
       },
       {
         "year": 2017,
@@ -6693,8 +5946,8 @@
         "points": 60.6,
         "team": "flaccoroni and cheese",
         "key": "flaccoroni and cheese",
-        "managerId": "flaccoroni-and-cheese",
-        "managerName": "flaccoroni and cheese"
+        "managerId": "michael",
+        "managerName": "Michael"
       },
       {
         "year": 2015,
@@ -6705,8 +5958,8 @@
         "points": 54,
         "team": "Le'Voen a prayer",
         "key": "le'voen a prayer",
-        "managerId": "le-voen-a-prayer",
-        "managerName": "Le'Voen a prayer"
+        "managerId": "caleb",
+        "managerName": "Caleb"
       },
       {
         "year": 2012,
@@ -6717,8 +5970,8 @@
         "points": 51.2,
         "team": "The Christian Wolverines",
         "key": "the christian wolverines",
-        "managerId": "the-christian-wolverines",
-        "managerName": "The Christian Wolverines"
+        "managerId": "eli",
+        "managerName": "Eli"
       }
     ]
   },
@@ -6744,24 +5997,8 @@
       "msg": "2016: seed tie straddles the playoff cutoff at 0.462 — The Highlanders, Beats by Ray, UNLEASH THE BEASLEY, Hernandez' Hitmen. Playoff field taken from final placement instead."
     },
     {
-      "scope": "seeding",
-      "msg": "2012: seed tie straddles the playoff cutoff at 0.385 — The Christian Wolverines, coles untouchables. Playoff field taken from final placement instead."
-    },
-    {
-      "scope": "playoffs",
-      "msg": "2018 (top 6): Go Kart Mozart 7-6 (.538) missed the bracket despite a better record than a team that made it"
-    },
-    {
       "scope": "playoffs",
       "msg": "2013 (top 6): THE BIG MAN ON CAMPUS 7-6 (.538) missed the bracket despite a better record than a team that made it (expected — this season had divisions, so division winners likely auto-qualified)"
-    },
-    {
-      "scope": "playoffs",
-      "msg": "2012 (top 4): Vipers 6-7 (.462), coles untouchables 5-8 (.385) missed the bracket despite a better record than a team that made it"
-    },
-    {
-      "scope": "managers",
-      "msg": "41 of 41 team names have no manager yet in data/managers.csv — they show under their team name, and one person can still appear as several entries."
     }
   ]
 }

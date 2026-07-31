@@ -52,15 +52,30 @@ function parseLine(line) {
   return out.map((s) => s.trim())
 }
 
-/** Rows from a headered CSV body, skipping blanks and `#` comments. */
-function parseCsv(text) {
-  const lines = text.split(/\r?\n/).filter((l) => l.trim() && !l.trimStart().startsWith('#'))
-  if (!lines.length) return []
-  const header = parseLine(lines[0])
-  return lines.slice(1).map((l) => {
-    const cells = parseLine(l)
-    return Object.fromEntries(header.map((h, i) => [h, cells[i] ?? '']))
-  })
+/**
+ * Rows from a headered CSV body, skipping blanks and comments.
+ *
+ * `headerHint` names a column that must appear in the header row, which is how we
+ * survive a round-trip through Excel: saving from Sheets prepends the sheet name as
+ * a bare line and re-quotes the `#` comments, so neither "first line is the header"
+ * nor "comments start with #" holds on the raw text. Comment detection therefore
+ * runs on the *parsed* first cell, not the raw line.
+ */
+function parseCsv(text, headerHint) {
+  const rows = text
+    .split(/\r?\n/)
+    .filter((l) => l.trim())
+    .map(parseLine)
+    .filter((cells) => !String(cells[0] ?? '').trimStart().startsWith('#'))
+  if (!rows.length) return []
+  let h = 0
+  if (headerHint) {
+    const found = rows.findIndex((cells) => cells.includes(headerHint))
+    if (found === -1) fail(`expected a header row containing "${headerHint}"`)
+    h = found
+  }
+  const header = rows[h]
+  return rows.slice(h + 1).map((cells) => Object.fromEntries(header.map((k, i) => [k, cells[i] ?? ''])))
 }
 
 /** Split the scraped history file into its `=== SECTION ===` blocks. */
@@ -248,7 +263,7 @@ if (!existsSync(MANAGERS_PATH)) {
   console.log(`\n  → Wrote data/managers.csv (${allKeys.length} team names) — fill in the "manager" column.\n`)
 }
 
-const mgrRows = parseCsv(readFileSync(MANAGERS_PATH, 'utf8'))
+const mgrRows = parseCsv(readFileSync(MANAGERS_PATH, 'utf8'), 'team_name')
 
 // The roster of team names must match the data exactly, or a season would vanish.
 {
@@ -279,6 +294,25 @@ for (const r of mgrRows) {
 const managerDefs = [...groups.values()]
 const keyToManager = new Map()
 for (const m of managerDefs) for (const a of m.aliases) keyToManager.set(norm(a), m)
+
+// One person cannot field two teams in the same season. This is the check that catches
+// a mistyped or misremembered name in managers.csv — far faster than an eyeball pass.
+{
+  const clashes = []
+  for (const m of managerDefs) {
+    const seen = new Map()
+    for (const a of m.aliases) {
+      for (const ts of teamSeasons.filter((t) => t.key === norm(a))) {
+        if (seen.has(ts.year)) clashes.push(`${m.name} has both "${seen.get(ts.year)}" and "${ts.team}" in ${ts.year}`)
+        else seen.set(ts.year, ts.team)
+      }
+    }
+  }
+  if (clashes.length) {
+    fail(`data/managers.csv puts one manager on two teams in the same season:\n    - ${clashes.join('\n    - ')}\n\n  Either two people share a name, or a row is assigned to the wrong person.`)
+  }
+}
+console.log('  ✓ no manager is on two teams in the same season')
 
 const managersComplete = unmapped === 0
 if (unmapped) warn('managers', `${unmapped} of ${mgrRows.length} team names have no manager yet in data/managers.csv — they show under their team name, and one person can still appear as several entries.`)
@@ -355,7 +389,9 @@ const managers = managerDefs.map((m) => {
     id: m.id,
     name: m.name,
     identified: m.identified,
-    teamNames: seasons.map((s) => s.team).filter((v, i, a) => a.indexOf(v) === i),
+    // Canonical casing, deduped — the source spells some teams two ways
+    // ("flaccoroni" / "Flaccoroni"), which would otherwise read as two teams.
+    teamNames: [...new Set(seasons.map((s) => displayName.get(norm(s.team))))],
     seasons,
     firstYear: seasons[0]?.year ?? null,
     lastYear: seasons.at(-1)?.year ?? null,
