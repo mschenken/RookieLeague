@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useState } from 'react'
-import { useIntroAudio } from '../lib/useIntroAudio'
+import { useSwooshes, type Voice } from '../lib/useSwooshes'
 
 const TEAMS = [
   'ari', 'atl', 'bal', 'buf', 'car', 'chi', 'cin', 'cle', 'dal', 'den', 'det', 'gb',
@@ -22,11 +22,26 @@ function scatter(i: number) {
   return { sx: Math.round(Math.cos(angle) * dist), sy: Math.round(Math.sin(angle) * dist), spin: Math.round((a - 0.5) * 720) }
 }
 
-type Chip = { abbr: string; tx: string; ty: string; sx: number; sy: number; spin: number; delay: number; inner: boolean }
+type Chip = {
+  abbr: string
+  tx: string
+  ty: string
+  /** Unit-vector target, kept numeric for positioning the audio. */
+  ux: number
+  uy: number
+  sx: number
+  sy: number
+  spin: number
+  delay: number
+  inner: boolean
+}
 
 export default function Intro({ onDone }: { onDone: () => void }) {
   const [leaving, setLeaving] = useState(false)
-  const audio = useIntroAudio()
+  // Bumping this re-keys the chips, which restarts their CSS animation — used to
+  // replay the fly-in when someone turns sound on after it has already played.
+  const [run, setRun] = useState(0)
+  const audio = useSwooshes()
 
   // Two concentric rings: 32 logos on one circle either overlap on a phone or
   // push the wordmark off-centre.
@@ -39,6 +54,8 @@ export default function Intro({ onDone }: { onDone: () => void }) {
           abbr,
           tx: cssNum(Math.cos(angle)),
           ty: cssNum(Math.sin(angle)),
+          ux: Math.cos(angle),
+          uy: Math.sin(angle),
           sx, sy, spin,
           delay: delayBase + i * 26,
           inner,
@@ -50,6 +67,24 @@ export default function Intro({ onDone }: { onDone: () => void }) {
     ]
   }, [])
 
+  // One voice per logo, panned along the path it actually flies: from far out at
+  // its scatter bearing, in to its spot on the ring. Web Audio has +Y up and the
+  // screen has +Y down, hence the negated vertical.
+  const voices = useMemo<Voice[]>(
+    () =>
+      chips.map((c, i) => {
+        const d = Math.hypot(c.sx, c.sy) || 1
+        return {
+          at: c.delay / 1000,
+          from: [(c.sx / d) * 7, (-c.sy / d) * 3.5, -7],
+          to: [c.ux * 3.2, -c.uy * 2.2, -1.2],
+          dur: 0.62,
+          tone: 0.85 + ((i * 7) % 11) / 22,
+        }
+      }),
+    [chips],
+  )
+
   const dismiss = () => {
     if (leaving) return
     audio.stop()
@@ -57,7 +92,22 @@ export default function Intro({ onDone }: { onDone: () => void }) {
     setTimeout(onDone, 420)
   }
 
-  // Auto-advance once the show has played, but never trap anyone here.
+  // Play on mount when the browser already allows audio; otherwise the control below
+  // offers a replay.
+  useEffect(() => {
+    if (audio.state !== 'on') return
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return
+    audio.play(voices)
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [audio.state, run])
+
+  const toggleSound = async () => {
+    if (audio.state === 'on') { audio.mute(); return }
+    if (await audio.enable()) setRun((r) => r + 1) // replay the fly-in, now audible
+  }
+
+  // Auto-advance once the show has played, but never trap anyone here. Restarts on
+  // `run` so turning sound on does not get cut off mid-replay.
   useEffect(() => {
     const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches
     const timer = setTimeout(dismiss, reduced ? 800 : 5400)
@@ -67,7 +117,7 @@ export default function Intro({ onDone }: { onDone: () => void }) {
     window.addEventListener('keydown', onKey)
     return () => { clearTimeout(timer); window.removeEventListener('keydown', onKey) }
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [])
+  }, [run])
 
   return (
     <div
@@ -93,7 +143,7 @@ export default function Intro({ onDone }: { onDone: () => void }) {
           const ry = c.inner ? 'clamp(140px, 38vh, 340px)' : 'clamp(175px, 43vh, 450px)'
           return (
             <div
-              key={c.abbr}
+              key={`${c.abbr}-${run}`}
               className="logo-chip absolute h-0 w-0"
               style={{
                 ['--tx' as string]: `calc(${c.tx} * ${rx})`,
@@ -154,17 +204,16 @@ export default function Intro({ onDone }: { onDone: () => void }) {
         </button>
       </div>
 
-      <audio ref={audio.ref} src={audio.src} loop preload="auto" onError={audio.onError} />
-
-      {/* Hidden entirely when there is no audio file, so a missing theme is invisible
-          rather than a dead button. */}
-      {audio.state !== 'unavailable' && (
+      {/* Hidden where Web Audio is unavailable, so it is never a dead button. Off
+          state offers a replay, because the logos have usually already landed by the
+          time anyone can click. */}
+      {audio.state !== 'unsupported' && (
         <button
-          onClick={(e) => { e.stopPropagation(); audio.state === 'playing' ? audio.mute() : audio.enable() }}
-          aria-label={audio.state === 'playing' ? 'Mute theme music' : 'Play theme music'}
+          onClick={(e) => { e.stopPropagation(); toggleSound() }}
+          aria-label={audio.state === 'on' ? 'Mute flight sounds' : 'Replay with sound'}
           className="absolute bottom-5 left-5 rounded-full border border-hair px-3.5 py-2 text-xs font-medium text-muted transition hover:border-gold/40 hover:text-gold focus:outline-none focus-visible:ring-2 focus-visible:ring-gold"
         >
-          {audio.state === 'playing' ? '🔊 Sound on' : '🔇 Sound off'}
+          {audio.state === 'on' ? '🔊 Sound on' : '🔇 Replay with sound'}
         </button>
       )}
 

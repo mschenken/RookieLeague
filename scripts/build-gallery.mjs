@@ -15,7 +15,7 @@
  * Run with `npm run gallery` after adding photos. Requires the optional `sharp` dep.
  */
 
-import { readdirSync, mkdirSync, writeFileSync, existsSync, statSync } from 'node:fs'
+import { readdirSync, mkdirSync, writeFileSync, existsSync, statSync, unlinkSync } from 'node:fs'
 import { dirname, join, extname, basename } from 'node:path'
 import { fileURLToPath } from 'node:url'
 
@@ -80,8 +80,16 @@ for (const file of files) {
   })
 }
 
+// Drop outputs whose source photo is gone, so deleting from photos/ actually
+// removes the picture from the site instead of leaving it published.
+const keep = new Set(images.map((i) => i.src.replace('gallery/', '')))
+let pruned = 0
+for (const f of readdirSync(OUT)) {
+  if (f.endsWith('.webp') && !keep.has(f)) { unlinkSync(join(OUT, f)); pruned++ }
+}
+
 mkdirSync(dirname(MANIFEST), { recursive: true })
 writeFileSync(MANIFEST, JSON.stringify({ images }, null, 2))
 
 const mb = (b) => (b / 1048576).toFixed(1)
-console.log(`  gallery: ${images.length} images, ${mb(srcBytes)}MB -> ${mb(outBytes)}MB (metadata stripped)`)
+console.log(`  gallery: ${images.length} images, ${mb(srcBytes)}MB -> ${mb(outBytes)}MB (metadata stripped)${pruned ? `, ${pruned} removed` : ''}`)

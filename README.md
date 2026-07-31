@@ -103,12 +103,22 @@ It does two things beyond shrinking files:
 Note the gallery is public: anything recognisable in a photo, including third parties
 in screenshots, is visible to anyone with the link.
 
-## Intro music
+## Intro sound
 
-The intro looks for `public/audio/draft-theme.{mp3,m4a,ogg,wav}`. None present means a
-silent intro and no audio control. See `public/audio/README.md` — in particular, browsers
-will not autoplay sound before a visitor interacts with the page, so the first visit shows
-a one-tap "Sound off" control rather than starting on its own.
+Each of the 32 logos gets its own swoosh as it flies in, **synthesised in the browser**
+(`src/lib/useSwooshes.ts`) — there is no audio file to ship or license.
+
+Per voice: a brown-noise buffer through a bandpass filter whose centre frequency sweeps
+up and back down (that sweep is what reads as a pass-by rather than a hiss), through a
+gain envelope, into a `PannerNode` whose position ramps along the same path the logo
+travels — far out at its scatter bearing, in to its spot on the ring. Brown rather than
+white noise because integrating the signal rolls off the high end and sounds like moving
+air. A compressor sits in front of the output; 32 overlapping voices clip without it.
+
+Browsers keep an `AudioContext` suspended until the visitor interacts with the page, so
+on a first visit the intro is silent and the control reads **"Replay with sound"** —
+clicking it resumes audio and replays the fly-in, since the logos have usually landed by
+then. Where audio is already permitted it just plays. Reduced-motion skips it entirely.
 
 ## Layout
 
